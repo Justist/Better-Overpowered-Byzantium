@@ -1,0 +1,23 @@
+pay_fervor = {
+	trigger = {
+		religion = reformed
+		FROM = { religion = reformed }
+		has_dlc = "Wealth of Nations"
+		fervor = 5
+		NOT = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+		}
+		
+	}
+	
+	effect = {
+		add_fervor = -5
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

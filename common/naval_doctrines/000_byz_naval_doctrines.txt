@@ -1,0 +1,22 @@
+byz_armada =
+{
+    can_select = {
+        is_primitive = no
+        OR = {
+            tag = BYZ
+            tag = ROM
+        }
+    }
+
+    country_modifier = {
+        own_coast_naval_combat_bonus = 2.0
+        treasure_fleet_income = 0.5
+        siege_blockade_progress = 1
+        global_naval_barrage_cost = -0.4
+        capture_ship_chance = 0.5
+        global_ship_trade_power = 0.5
+        allowed_marine_fraction = 1.0
+    }
+
+    button_gfx = 6
+}

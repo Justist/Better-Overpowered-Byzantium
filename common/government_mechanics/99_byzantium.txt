@@ -1,0 +1,140 @@
+byzantine_mechanic = {
+    alert_icon_gfx = GFX_alerticons_government_mechanics
+    alert_icon_index = 1
+    available = {
+        OR = {
+            has_dlc = "Third Rome"
+            has_dlc = "Domination"
+        }
+    }
+
+    powers = {
+        byzantine_adm_power = {
+            max = 150
+            monarch_power = ADM
+            base_monthly_growth = 0.35
+        }
+        byzantine_dip_power = {
+            max = 150
+            monarch_power = DIP
+            base_monthly_growth = 0.35
+        }
+        byzantine_mil_power = {
+            max = 150
+            monarch_power = MIL
+            base_monthly_growth = 0.35
+        }
+    }
+
+    interactions = {
+        RUSABIL_SUDEBNIK = {
+            gui = russian_mechanics_interaction_gui
+            icon = GFX_russian_ability_ADM
+            cost_type = byzantine_adm_power
+            cost = 100
+            trigger = {
+                any_owned_province = {
+                    local_autonomy_above_min = 5
+                }
+            }
+            effect = {
+                custom_tooltip = RUSABIL_SUDEBNIK_EFFECT_TT
+                tooltip = {
+                    add_local_autonomy_no_authority_effect = -10
+                }
+                hidden_effect = {
+                    every_owned_province = {
+                        add_local_autonomy_no_authority_effect = -10
+                    }
+                }
+            }
+            cooldown_years = 0
+            ai_chance = {
+                factor = 1
+                modifier = {
+                    factor = 10
+                    average_autonomy_above_min = 20
+                }
+                modifier = {
+                    factor = 10
+                    average_autonomy_above_min = 10
+                    has_government_power = {
+                        mechanic_type = byzantine_mechanic
+                        power_type = byzantine_adm_power
+                        value = 140
+                    }
+                }
+            }
+        }
+        RUSABIL_OPRICHNINA = {
+            gui = russian_mechanics_interaction_gui
+            icon = GFX_russian_ability_DIP
+            cost_type = byzantine_dip_power
+            cost = 100
+            trigger = {
+                rebel_progress_at_least = { value = 20 }
+            }
+            effect = {
+                add_rebel_progress = {
+                    value = -30
+                }
+            }
+            cooldown_years = 0
+            ai_chance = {
+                factor = 1
+                modifier = {
+                    factor = 10
+                    rebel_progress_at_least = { value = 80 }
+                }
+                modifier = {
+                    factor = 10
+                    rebel_progress_at_least = { value = 30 }
+                    has_government_power = {
+                        mechanic_type = byzantine_mechanic
+                        power_type = byzantine_dip_power
+                        value = 140
+                    }
+                }
+            }
+        }
+        RUSABIL_STRELTSY = {
+            gui = russian_mechanics_interaction_gui
+            icon = GFX_russian_ability_MIL
+            cost_type = byzantine_mil_power
+            cost = 100
+            trigger = {
+                capital_scope = {
+                    controller = {
+                        tag = ROOT
+                    }
+                    has_siege = no
+                }
+            }
+            effect = {
+                # create_unit_forcelimit_percentage = {
+                # 	type = infantry
+                # 	special_unit_category = banner
+                # 	force_limit_percentage = 0.2
+                # }
+                add_country_modifier = {
+                    name = equipped_pronoiar_modifier
+                    duration = 3650
+                }
+                add_yearly_manpower = 0.6
+                add_war_exhaustion = -2
+            }
+            cooldown_years = 0
+            ai_chance = {
+                factor = 1
+                modifier = {
+                    factor = 10
+                    is_in_important_war = yes
+                }
+                modifier = {
+                    factor = 10
+                    is_at_war = yes
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+# Create new diplomatic actions like this. AI will currently never send them.
+steal_maps_country = {
+	category = covert
+
+	require_acceptance = no
+
+	is_visible = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	is_allowed = {
+		has_estate_privilege = estate_clergy_barbarians
+	}
+	on_accept = {
+		FROM = {
+			every_owned_province = {
+				discover_country = ROOT
+				every_neighbor_province = {
+					discover_country = ROOT
+				}
+			}
+		}
+		add_spy_network_in = {
+			who = FROM
+			value = 100
+		}
+	}
+	
+	ai_will_do = {
+		always = no
+	}
+}

@@ -1,0 +1,407 @@
+byz_senate_issue1 = {
+	category = 1 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		army_tradition_decay = -2.5
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue2 = {
+	category = 2 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		improve_relation_modifier = 1.0
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue3 = {
+	category = 3 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		build_cost = -0.3
+		build_time = -0.3
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue4 = {
+	category = 3 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		inflation_reduction = 1.0
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue5 = {
+	category = 3 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		global_tax_modifier = 0.5
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue6 = {
+	category = 2 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		navy_tradition = 1.0
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue7 = {
+	category = 2 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		war_exhaustion = -1.0
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue8 = {
+	category = 2 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		country_diplomatic_power = 2
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue9 = {
+	category = 3 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		country_admin_power = 2
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue10 = {
+	category = 1 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		country_military_power = 2
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue11 = {
+	category = 1 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		hostile_attrition = 5
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue12 = {
+	category = 1 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		yearly_army_professionalism = 0.02
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue13 = {
+	category = 3 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+	}
+
+	modifier = {
+		expand_administration_cost = -1.0
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue14 = {
+	category = 3 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+		create_explorer = { tradition = 100 }
+	}
+
+	modifier = {
+		range = 2.0
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_senate_issue15 = {
+	category = 3 		# same category = 90% less likely
+
+	allow = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+		create_conquistador = { tradition = 100 }
+	}
+
+	modifier = {
+		range = 2.0
+	}
+
+	chance = {
+		# Set high chance to overrule "weak" issues
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

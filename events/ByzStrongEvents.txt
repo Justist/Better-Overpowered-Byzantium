@@ -1,0 +1,78 @@
+########################################
+# Byz strong events					   #
+########################################
+
+namespace = byzstrong_events
+
+
+# Choose an heir
+country_event = {
+	id = byzstrong_events.1
+	title = byzstrong_events.1.t
+	picture = 3_SONS_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		has_reform = byz_government_reform
+		has_heir = no
+	}
+
+	# Set description
+	desc = byzstrong_events.1.desc
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = byzstrong_events.1.a #Son
+		define_heir = {
+			dynasty = original_dynasty
+			male = yes
+			claim = 100
+			ADM = 3
+			DIP = 3
+			MIL = 6
+			age = 15
+		}
+		add_stability = 1
+		add_prestige = 50
+		add_patriarch_authority = 0.2
+	}
+
+	option = {
+		name = byzstrong_events.1.b #Nephew
+		define_heir = {
+			dynasty = original_dynasty
+			male = yes
+			claim = 100
+			ADM = 6
+			DIP = 3
+			MIL = 3
+			age = 15
+		}
+		add_stability = 1
+		add_prestige = 50
+		add_patriarch_authority = 0.2
+	}
+
+	option = {
+		name = byzstrong_events.1.c #Daughter
+		define_heir = {
+			dynasty = original_dynasty
+			female = yes
+			claim = 100
+			ADM = 3
+			DIP = 6
+			MIL = 3
+			age = 15
+		}
+		add_stability = 1
+		add_prestige = 50
+		add_patriarch_authority = 0.2
+	}
+
+}

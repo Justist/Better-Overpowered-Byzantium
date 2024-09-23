@@ -1,0 +1,166 @@
+byz_monetary_support = {
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+		add_years_of_income = 0.05
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_bribe_dev_adm = {
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+		FROM = {
+			add_base_tax = 1
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_bribe_dev_dip = {
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+		FROM = {
+			add_base_production = 1
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_bribe_dev_mil = {
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+
+	effect = {
+		FROM = {
+			add_base_manpower = 1
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_bribe_build1 = {
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		FROM = {
+			NOT = { has_building = temple }
+		}
+		adm_tech = 4
+	}
+
+	effect = {
+		FROM = {
+			add_building = temple
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_bribe_build2 = {
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		FROM = {
+			NOT = { has_building = workshop }
+		}
+		adm_tech = 5
+	}
+
+	effect = {
+		FROM = {
+			add_building = workshop
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+byz_bribe_build3 = {
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		FROM = {
+			NOT = { has_building = marketplace }
+		}
+		dip_tech = 4
+	}
+
+	effect = {
+		FROM = {
+			add_building = marketplace
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+byz_bribe_build4 = {
+	trigger = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+		FROM = {
+			NOT = { has_building = barracks }
+		}
+		mil_tech = 6
+	}
+
+	effect = {
+		FROM = {
+			add_building = barracks
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

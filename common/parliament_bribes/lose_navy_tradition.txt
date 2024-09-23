@@ -1,0 +1,25 @@
+lose_navy_tradition = {
+	trigger = {
+		FROM = { has_port = yes }
+		navy_tradition = 5
+		NOT = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+		}
+		
+	}
+	
+	effect = {
+		add_navy_tradition = -5
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			is_at_war = yes
+		}
+	}
+}

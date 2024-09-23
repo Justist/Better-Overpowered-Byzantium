@@ -1,0 +1,19 @@
+military_support = {
+	trigger = {
+		NOT = {
+			OR = {
+				tag = BYZ
+				tag = ROM
+			}
+		}
+		
+	}
+	
+	effect = {
+		mil_power_cost = 10
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

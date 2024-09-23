@@ -1,0 +1,31 @@
+byz_legacy_government_reform = {
+	# government mechanics flags go here
+	icon = "crown"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	modifiers = {
+		tolerance_own = 5
+		global_manpower_modifier = 1.00
+		global_sailors_modifier = 1.00
+		yearly_absolutism = 1.0
+		global_autonomy = -0.25
+		governing_capacity = 600
+		governing_capacity_modifier = 2.0
+		unjustified_demands = -0.2
+		legitimacy = 1.0
+		max_absolutism = 20
+		# This is already cared for by the choose heir event
+		monarch_military_power = 3
+		monarch_diplomatic_power = 3
+		monarch_admin_power = 3
+		# Military
+		amount_of_banners = 2.0
+	}
+	ai = {
+		factor = 0
+	}
+}

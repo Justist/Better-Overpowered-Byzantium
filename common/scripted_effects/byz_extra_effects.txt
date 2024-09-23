@@ -1,0 +1,300 @@
+## adds navy tradition until 100 is reached and then adds the rest as dip power
+### add_navy_tradition_or_dip_power = { amount = <number> }
+add_navy_tradition_or_dip_power = {
+    [[amount]
+        tooltip = {
+            add_navy_tradition = $amount$
+        }
+        custom_tooltip = INF_ADD_NAVY_TRADITION_OR_DIP_POWER
+        hidden_effect = {
+            for = {
+                amount = $amount$
+                effect = "
+					if = {
+						limit = {
+							NOT = { navy_tradition = 99.9 }
+						}
+						add_navy_tradition = 1
+					}
+					else = {
+						add_dip_power = 3
+					}
+				"
+            }
+        }
+    ]
+
+    [[value]
+        tooltip = {
+            add_navy_tradition = $value$
+        }
+        custom_tooltip = INF_ADD_NAVY_TRADITION_OR_DIP_POWER
+        hidden_effect = {
+            for = {
+                amount = $value$
+                effect = "
+					if = {
+						limit = {
+							NOT = { navy_tradition = 99.9 }
+						}
+						add_navy_tradition = 1
+					}
+					else = {
+						add_dip_power = 3
+					}
+				"
+            }
+        }
+    ]
+}
+
+
+## adds devotion until 100 is reached and then adds the rest as mil power
+### add_devotion_or_mil_power = { amount = <number> }
+add_devotion_or_mil_power = {
+    [[amount]
+        tooltip = {
+            add_devotion = $amount$
+        }
+        custom_tooltip = INF_ADD_DEVOTION_OR_MIL_POWER
+        hidden_effect = {
+            for = {
+                amount = $amount$
+                effect = "
+					if = {
+						limit = {
+							NOT = { devotion = 99.9 }
+						}
+						add_devotion = 1
+					}
+					else = {
+						add_mil_power = 3
+					}
+				"
+            }
+        }
+    ]
+
+    [[value]
+        tooltip = {
+            add_devotion = $value$
+        }
+        custom_tooltip = INF_ADD_DEVOTION_OR_MIL_POWER
+        hidden_effect = {
+            for = {
+                amount = $value$
+                effect = "
+					if = {
+						limit = {
+							NOT = { devotion = 99.9 }
+						}
+						add_devotion = 1
+					}
+					else = {
+						add_mil_power = 3
+					}
+				"
+            }
+        }
+    ]
+}
+
+## adds church power until 200 is reached and then adds the rest as adm power
+### add_church_power_or_adm_power = { amount = <number> }
+add_church_power_or_adm_power = {
+    [[amount]
+        tooltip = {
+            add_church_power = $amount$
+        }
+        custom_tooltip = INF_ADD_CHURCH_POWER_OR_ADM_POWER
+        hidden_effect = {
+            for = {
+                amount = $amount$
+                effect = "
+					if = {
+						limit = {
+							NOT = { church_power = 199.9 }
+						}
+						add_church_power = 1
+					}
+					else = {
+						add_adm_power = 1
+					}
+				"
+            }
+        }
+    ]
+
+    [[value]
+        tooltip = {
+            add_church_power = $value$
+        }
+        custom_tooltip = INF_ADD_CHURCH_POWER_OR_ADM_POWER
+        hidden_effect = {
+            for = {
+                amount = $value$
+                effect = "
+					if = {
+						limit = {
+							NOT = { church_power = 199.9 }
+						}
+						add_church_power = 1
+					}
+					else = {
+						add_adm_power = 1
+					}
+				"
+            }
+        }
+    ]
+}
+
+## adds fervor until 100 is reached and then adds the rest as adm power
+### add_fervor_or_adm_power = { amount = <number> }
+add_fervor_or_adm_power = {
+    [[amount]
+        tooltip = {
+            add_fervor = $amount$
+        }
+        custom_tooltip = INF_ADD_FERVOR_OR_ADM_POWER
+        hidden_effect = {
+            for = {
+                amount = $amount$
+                effect = "
+					if = {
+						limit = {
+							NOT = { fervor = 99.9 }
+						}
+						add_fervor = 1
+					}
+					else = {
+						add_adm_power = 1
+					}
+				"
+            }
+        }
+    ]
+
+    [[value]
+        tooltip = {
+            add_fervor = $value$
+        }
+        custom_tooltip = INF_ADD_FERVOR_OR_ADM_POWER
+        hidden_effect = {
+            for = {
+                amount = $value$
+                effect = "
+					if = {
+						limit = {
+							NOT = { fervor = 99.9 }
+						}
+						add_fervor = 1
+					}
+					else = {
+						add_adm_power = 1
+					}
+				"
+            }
+        }
+    ]
+}
+
+## adds republican tradition until 100 is reached and then adds the rest as mil power
+### add_republican_tradition_or_mil_power = { amount = <number> }
+add_republican_tradition_or_mil_power = {
+    [[amount]
+        tooltip = {
+            add_republican_tradition = $amount$
+        }
+        custom_tooltip = INF_ADD_REPUB_TRADITION_OR_MIL_POWER
+        hidden_effect = {
+            for = {
+                amount = $amount$
+                effect = "
+					if = {
+						limit = {
+							NOT = { republican_tradition = 99.9 }
+						}
+						add_republican_tradition = 1
+					}
+					else = {
+						add_mil_power = 3
+					}
+				"
+            }
+        }
+    ]
+
+    [[value]
+        tooltip = {
+            add_republican_tradition = $value$
+        }
+        custom_tooltip = INF_ADD_REPUB_TRADITION_OR_MIL_POWER
+        hidden_effect = {
+            for = {
+                amount = $value$
+                effect = "
+					if = {
+						limit = {
+							NOT = { republican_tradition = 99.9 }
+						}
+						add_republican_tradition = 1
+					}
+					else = {
+						add_mil_power = 3
+					}
+				"
+            }
+        }
+    ]
+}
+
+## adds horde unity until 100 is reached and then adds the rest as mil power
+### add_horde_unity_or_mil_power = { amount = <number> }
+add_horde_unity_or_mil_power = {
+    [[amount]
+        tooltip = {
+            add_horde_unity = $amount$
+        }
+        custom_tooltip = INF_ADD_HORDE_UNITY_OR_MIL_POWER
+        hidden_effect = {
+            for = {
+                amount = $amount$
+                effect = "
+					if = {
+						limit = {
+							NOT = { horde_unity = 99.9 }
+						}
+						add_horde_unity = 1
+					}
+					else = {
+						add_mil_power = 3
+					}
+				"
+            }
+        }
+    ]
+
+    [[value]
+        tooltip = {
+            add_horde_unity = $value$
+        }
+        custom_tooltip = INF_ADD_HORDE_UNITY_OR_MIL_POWER
+        hidden_effect = {
+            for = {
+                amount = $value$
+                effect = "
+					if = {
+						limit = {
+							NOT = { horde_unity = 99.9 }
+						}
+						add_horde_unity = 1
+					}
+					else = {
+						add_mil_power = 3
+					}
+				"
+            }
+        }
+    ]
+}

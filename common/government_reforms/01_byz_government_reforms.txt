@@ -1,0 +1,213 @@
+byz_government_reform = {
+	icon = "peacock_throne"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	lock_level_when_selected = yes
+	legacy_equivalent = byz_legacy_government_reform
+
+	modifiers = {
+		# Military
+		governing_capacity = 600
+		governing_capacity_modifier = 2.0
+		amount_of_banners = 1.0
+	}
+
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			enables_pronoias = yes
+		}
+	}
+
+	assimilation_cultures = {
+		altaic = {
+			artillery_cost = -0.2
+		}
+		baltic = {
+			naval_forcelimit_modifier = 0.1
+		}
+		british = {
+			ship_durability = 0.1
+		}
+		burman = {
+			free_leader_pool = 2
+		}
+		byzantine = {
+			legitimacy = 0.5
+		}
+		carpathian = {
+			mercenary_cost = -0.2
+		}
+		caucasian = {
+			mercenary_discipline = 0.1
+		}
+		gaelic = {
+			shock_damage = 0.1
+		}
+		central_indic = {
+			land_attrition = -0.2
+		}
+		east_asian = {
+			state_maintenance_modifier = -0.4
+		}
+		kongo_group = {
+			heir_chance = 1.0
+		}
+		cushitic = {
+			missionaries = 2
+		}
+		dravidian = {
+			global_trade_goods_size_modifier = 0.1
+		}
+		african = {
+			global_tax_income = 20
+		}
+		east_slavic = {
+			land_forcelimit_modifier = 0.2
+		}
+		eastern_aryan = {
+			production_efficiency = 0.1
+		}
+		evenks = {
+			cavalry_flanking = 0.4
+		}
+		french = {
+			diplomats = 2
+		}
+		germanic = {
+			global_institution_spread = 0.30
+		}
+		great_lakes_group = {
+			loot_amount = 1.0
+		}
+		hindusthani = {
+			core_creation = -0.2
+		}
+		iberian = {
+			global_colonial_growth = 20
+		}
+		iranian = {
+			advisor_cost = -0.2
+		}
+		japanese_g = {
+			land_morale = 0.2
+		}
+		korean_g = {
+			idea_cost = -0.1
+		}
+		latin = {
+			embracement_cost = -0.2
+		}
+		lost_cultures_group = {
+			discipline = 0.1
+		}
+		turko_semitic = {
+			cavalry_power = 0.2
+		}
+		maghrebi = {
+			privateer_efficiency = 0.5
+		}
+		malay = {
+			merchants = 2
+		}
+		mande = {
+			tolerance_heretic = 2
+		}
+#		mon_khmer = {
+#			build_cost = -0.1
+#		}
+		pacific = {
+			global_sailors_modifier = 0.2
+		}
+		sahelian = {
+			movement_speed = 0.2
+		}
+		scandinavian = {
+			mil_advisor_cost = -0.2
+		}
+		south_slavic = {
+			warscore_cost_vs_other_religion = -0.2
+		}
+		southern_african = {
+			inflation_reduction = 0.1
+		}
+		sudanese = {
+			caravan_power = 0.2
+		}
+		tartar = {
+			cavalry_cost = -0.30
+		}
+		southeastasian_group = {
+			development_cost = -0.1
+		}
+		tibetan_group = {
+			prestige_per_development_from_conversion = 1.0
+		}
+		finno_ugric = {
+			prestige_decay = -0.02
+		}
+		west_african = {
+			global_autonomy = -0.02
+		}
+		west_slavic = {
+			leader_land_fire = 2
+		}
+		western_aryan = {
+			trade_efficiency = 0.1
+		}
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			byzantine_mechanic
+		}
+		claim_states = yes
+	}
+
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		allow_banners = yes
+	}
+}
+
+
+byz_senate_reform = {
+	icon = "judge"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
+	}
+	lock_level_when_selected = yes
+
+	modifiers = {
+		global_unrest = -2
+		tolerance_own = 5
+		governing_capacity = 600
+		governing_capacity_modifier = 2.0
+		min_autonomy_in_territories = -0.4
+	}
+
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	factions = {
+		byz_faction_illustres
+		byz_faction_spectabiles
+		byz_faction_clarissimi
+	}
+	ai = {
+		factor = 0
+	}
+	# Still to add factions in the senate
+}
