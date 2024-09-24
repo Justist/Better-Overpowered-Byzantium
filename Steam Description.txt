@@ -1,0 +1,25 @@
+A new version of the mod [] by [].
+
+This makes it compatible with the current game, as well as fixing/changing some issues the mod had.
+
+What is fixed:
+- Alert Icons are now the proper icons instead of clearly broken
+- Parliament bribes are working and at all times op again
+- Culture conversion should no longer convert to No Culture
+- Byzantine Government mechanic should now buff all army units
+- Byzantium can now establish pronoiars, allowing some of the missions to be completed
+- All estate privileges are available again, including the debuffs Byzantium usually starts with, if you so wish
+- Naval doctrine is added first rather than last, so you can actually click it even if there are more than 5 doctrines available
+- Some typo's and minus signs which made things not work or the wrong way
+
+What is changed:
+- The mission tree is much larger; the old and new tree are basically mashed into one
+- Slightly improved the heir event, 4/2/2 -> 6/3/3
+- Holy Orders in states now provide state maintenance reduction instead of patriarch authority
+- Added some more flagship modifiers
+- Added all the new government forms the game has nowadays (not really too relevant for Byzantium, but might have other countries break less)
+- Updated a bunch of stuff with the new game file code, not sure how much of that impacts a Byzantium game though
+
+What is (still) not working:
+- The mission tree will very likely not work if you do not have the DLCs Purple Phoenix and King of Kings
+- Apparently there were plans to add factions to the senate, that has not been implemented by me.
