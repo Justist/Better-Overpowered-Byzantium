@@ -259,3 +259,6 @@
  INF_ADD_FERVOR_OR_ADM_POWER: "All the excess §YFervor§! will be converted into §G1§! §YAdministrative Power§! per 1 §YFervor§!."
  INF_ADD_REPUB_TRADITION_OR_MIL_POWER: "All the excess §YRepublican Tradition§! will be converted into §G3§! §YMilitary Power§! per 1 §YRepublican Tradition§!."
  INF_ADD_HORDE_UNITY_OR_MIL_POWER: "All the excess §YHorde Unity§! will be converted into §G3§! §YMilitary Power§! per 1 §YHorde Unity§!."
+
+ BYZ_bookmark_byzantium: "§ROv§Oer§Ypo§lwe§Gre§Jd B§Myz§Ban§Pti§Vum§!"
+ BYZ_bookmark_byzantium_desc: "Why would you choose anything else?"

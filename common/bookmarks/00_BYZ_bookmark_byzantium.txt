@@ -1,0 +1,11 @@
+bookmark = {
+    name = "BYZ_bookmark_byzantium"
+    desc = "BYZ_bookmark_byzantium_desc"
+    date = "1444.11.11"
+
+    center = 151
+    default = yes
+
+    country = BYZ
+    easy_country = BYZ
+}
