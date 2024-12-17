@@ -4,26 +4,26 @@ scapegoat_bribe = {
 		has_advisor = yes
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		kill_advisor = random
 		every_owned_province = {
-			limit = { 
+			limit = {
 				has_seat_in_parliament = yes
 				current_bribe = scapegoat_bribe
 				NOT = { province_id = FROM }
 			}
-			
+
 			back_current_issue = yes
 		}
 	}
-	
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -34,20 +34,20 @@ scapegoat_bribe_aztec = {
 		religion = nahuatl
 		has_advisor = yes
 	}
-	
+
 	effect = {
 		kill_advisor = random
 		every_owned_province = {
-			limit = { 
+			limit = {
 				has_seat_in_parliament = yes
 				current_bribe = scapegoat_bribe_aztec
 				NOT = { province_id = FROM }
 			}
-			
+
 			back_current_issue = yes
 		}
 	}
-	
+
 	ai_will_do = {
 		factor = 0
 	}

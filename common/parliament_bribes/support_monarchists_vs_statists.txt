@@ -9,8 +9,8 @@ support_monarchists = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -41,8 +41,8 @@ support_orangists = {
 		has_government_attribute = has_dutch_election
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -69,8 +69,8 @@ support_theocrats = {
 		has_reform = monastic_elections_reform
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -105,8 +105,8 @@ support_statists = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -137,8 +137,8 @@ support_revolutionaries = {
 		has_reform = feuillant_reform
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -169,8 +169,8 @@ support_militarists = {
 		has_reform = monastic_elections_reform
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}

@@ -4,8 +4,8 @@ grant_local_autonomy = {
 		FROM = { NOT = { local_autonomy = 80 } }
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 

@@ -9,8 +9,8 @@ pay_churchpower = {
 		church_power = 10
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -77,8 +77,7 @@ pay_pa = {
 		patriarch_authority = 0.05
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+
 			}
 		}
 	}
@@ -145,8 +144,8 @@ pay_papal_influence = {
 		papal_influence = 20
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -213,8 +212,8 @@ pay_fervor = {
 		fervor = 4
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -282,8 +281,8 @@ gain_piety = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -331,8 +330,8 @@ lose_piety = {
 		piety = 0.25
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -380,8 +379,8 @@ gain_karma = {
 		karma = 25
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -429,8 +428,8 @@ lose_karma = {
 		NOT = { karma = -25 }
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -479,8 +478,8 @@ pay_harmony = {
 		harmony = 5
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -547,8 +546,8 @@ national_pay_churchpower = {
 		church_power = 10
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -618,8 +617,8 @@ national_pay_pa = {
 		patriarch_authority = 0.2
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -689,8 +688,8 @@ national_pay_papal_influence = {
 		papal_influence = 20
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -760,8 +759,8 @@ national_pay_fervor = {
 		fervor = 20
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -832,8 +831,8 @@ national_gain_piety = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -884,8 +883,8 @@ national_lose_piety = {
 		piety = 0.25
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -936,8 +935,8 @@ national_gain_karma = {
 		karma = 25
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -988,8 +987,8 @@ national_lose_karma = {
 		NOT = { karma = -25 }
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -1041,8 +1040,8 @@ national_pay_harmony = {
 		harmony = 10
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}

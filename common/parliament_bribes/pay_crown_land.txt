@@ -4,20 +4,20 @@ pay_crown_land = {
 		NOT = { crown_land_share = 100 }
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		change_estate_land_share = {
 			estate = all
 			share = 2
 		}
 	}
-	
+
 	ai_will_do = {
 		factor = 0.75
 		modifier = {

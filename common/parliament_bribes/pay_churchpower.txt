@@ -2,11 +2,11 @@ pay_churchpower = {
 	trigger = {
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 		OR = {
 			AND = {
 				religion = protestant
@@ -19,11 +19,11 @@ pay_churchpower = {
 		}
 		church_power = 5
 	}
-	
+
 	effect = {
 		add_church_power = -5
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 	}

@@ -8,8 +8,8 @@ gain_war_exhaustion = {
 		NOT = { war_exhaustion = 19 }
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
@@ -79,8 +79,8 @@ national_gain_war_exhaustion = {
 		NOT = { war_exhaustion = 19 }
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}

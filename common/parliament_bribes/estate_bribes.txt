@@ -7,12 +7,12 @@ estate_church_bribe = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_church
@@ -22,7 +22,7 @@ estate_church_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -50,9 +50,9 @@ estate_nobles_bribe = {
 				tag = ROM
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_nobles
@@ -62,7 +62,7 @@ estate_nobles_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -86,13 +86,13 @@ estate_burghers_bribe = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_burghers
@@ -102,7 +102,7 @@ estate_burghers_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -126,13 +126,13 @@ estate_cossacks_bribe = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_cossacks
@@ -142,7 +142,7 @@ estate_cossacks_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -166,13 +166,13 @@ estate_brahmins_bribe = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_brahmins
@@ -182,7 +182,7 @@ estate_brahmins_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -206,13 +206,13 @@ estate_maratha_bribe = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_maratha
@@ -222,7 +222,7 @@ estate_maratha_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -246,13 +246,13 @@ estate_vaisyas_bribe = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_vaisyas
@@ -262,7 +262,7 @@ estate_vaisyas_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -286,13 +286,13 @@ estate_dhimmi_bribe = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_dhimmi
@@ -302,7 +302,7 @@ estate_dhimmi_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -326,13 +326,13 @@ estate_jains_bribe = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_jains
@@ -342,7 +342,7 @@ estate_jains_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -366,13 +366,13 @@ estate_rajput_bribe = {
 		}
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_estate_influence_modifier = {
             estate = estate_rajput
@@ -382,7 +382,7 @@ estate_rajput_bribe = {
             add = yes
         }
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {

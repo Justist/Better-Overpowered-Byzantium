@@ -7,8 +7,8 @@ pay_stability = {
 		current_size_of_parliament = 60
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
 	}

@@ -2,17 +2,17 @@ military_support = {
 	trigger = {
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		mil_power_cost = 10
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 	}

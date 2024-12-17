@@ -1,8 +1,8 @@
 byz_monetary_support = {
 	trigger = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 	}
 
@@ -18,8 +18,8 @@ byz_monetary_support = {
 byz_bribe_dev_adm = {
 	trigger = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 	}
 
@@ -37,8 +37,8 @@ byz_bribe_dev_adm = {
 byz_bribe_dev_dip = {
 	trigger = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 	}
 
@@ -56,8 +56,8 @@ byz_bribe_dev_dip = {
 byz_bribe_dev_mil = {
 	trigger = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 	}
 
@@ -75,8 +75,8 @@ byz_bribe_dev_mil = {
 byz_bribe_build1 = {
 	trigger = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 		FROM = {
 			NOT = { has_building = temple }
@@ -98,8 +98,8 @@ byz_bribe_build1 = {
 byz_bribe_build2 = {
 	trigger = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 		FROM = {
 			NOT = { has_building = workshop }
@@ -122,8 +122,8 @@ byz_bribe_build2 = {
 byz_bribe_build3 = {
 	trigger = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 		FROM = {
 			NOT = { has_building = marketplace }
@@ -145,8 +145,8 @@ byz_bribe_build3 = {
 byz_bribe_build4 = {
 	trigger = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 		FROM = {
 			NOT = { has_building = barracks }

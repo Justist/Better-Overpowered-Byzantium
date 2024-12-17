@@ -13,8 +13,8 @@ country_event = {
 
 	trigger = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 		has_reform = byz_government_reform
 		has_heir = no

@@ -6,17 +6,17 @@ pay_fervor = {
 		fervor = 5
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_fervor = -5
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 	}

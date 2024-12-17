@@ -7,8 +7,8 @@ administrative_support = {
 			}
 			NOT = {
 				OR = {
-					tag = BYZ
-					tag = ROM
+					is_or_was_tag = { tag = BYZ }
+					is_or_was_tag = { tag = ROM }
 				}
 			}
 		}
@@ -74,8 +74,8 @@ national_administrative_support = {
 			}
 			NOT = {
 				OR = {
-					tag = BYZ
-					tag = ROM
+					is_or_was_tag = { tag = BYZ }
+					is_or_was_tag = { tag = ROM }
 				}
 			}
 		}

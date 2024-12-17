@@ -4,17 +4,17 @@ pay_rep_tradition = {
 		republican_tradition = 1
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_republican_tradition = -1
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {

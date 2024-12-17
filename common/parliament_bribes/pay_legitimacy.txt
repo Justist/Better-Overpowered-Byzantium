@@ -5,17 +5,17 @@ pay_legitimacy = {
 		NOT = { has_reform = celestial_empire }
 		NOT = {
 			OR = {
-				tag = BYZ
-				tag = ROM
+				is_or_was_tag = { tag = BYZ }
+				is_or_was_tag = { tag = ROM }
 			}
 		}
-		
+
 	}
-	
+
 	effect = {
 		add_legitimacy = -2
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 	}
