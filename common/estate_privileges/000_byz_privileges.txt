@@ -9,13 +9,22 @@ estate_nobles_increase_professionalism = {
 	loyalty = 0.5
 	is_valid = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 	}
 	can_select = {
 	}
 	on_granted = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 20
+		}
+	}
+	can_revoke = {
+		always = yes
+	}
+	on_revoked = {
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 20
@@ -41,8 +50,8 @@ estate_nobles_raise_artillery = {
 	influence = 0
 	is_valid = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 	}
 	can_select = {
@@ -55,6 +64,10 @@ estate_nobles_raise_artillery = {
 			artillery = ROOT
 			artillery = ROOT
 			artillery = ROOT
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 20
 		}
 	}
 	can_revoke = {
@@ -82,8 +95,8 @@ estate_burghers_navy = {
 	loyalty = 0.5
 	is_valid = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 	}
 	can_select = {
@@ -128,8 +141,8 @@ estate_clergy_barbarians = {
 	loyalty = 0.5
 	is_valid = {
 		OR = {
-			tag = BYZ
-			tag = ROM
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
 		}
 	}
 	can_select = {
@@ -162,3 +175,42 @@ estate_clergy_barbarians = {
 	}
 }
 
+estate_cossacks_finest_horses = {
+	icon = privilege_conscript_cossack_elite
+	land_share = 0
+	max_absolutism = 0
+	influence = 0
+	loyalty = 0.5
+	is_valid = {
+		OR = {
+			is_or_was_tag = { tag = BYZ }
+			is_or_was_tag = { tag = ROM }
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+		add_estate_loyalty = {
+			estate = estate_cossacks
+			loyalty = 20
+		}
+	}
+	can_revoke = {
+		always = yes
+	}
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_cossacks
+			loyalty = 20
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		cavalry_cost = -0.2
+		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.10
+	}
+	mechanics = {
+	}
+}

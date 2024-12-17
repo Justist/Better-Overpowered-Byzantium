@@ -119,6 +119,8 @@
  estate_burghers_navy_desc:0 "The Megas Doux was a new office instituted by Emperor Alexios I. It was responsible for the maintenance, crewing and provision of warships."
  estate_clergy_barbarians:0 "Bureau of Barbarians"
  estate_clergy_barbarians_desc:0 "The Bureau of Barbarians was a department of government in the Byzantine Empire. They handled matters of protocol for any matters dealing with "Barbarians" - that is, anyone not Greek. Establishing the Bureau of Barbarians increases our diplomatic powers and allows us to send Speculatores."
+ estate_cossacks_finest_horses:0 "Rise of the Cathaphractoi"
+ estate_cossacks_finest_horses_desc:0 "The Cathaphractoi were the heavy cavalry of the Byzantine Empire. They were the equivalent of the western knights, and were considered the most powerful cavalry in the world. The Cossacks have the finest horses in the world, and can improve our cavalry even more."
 
  # Diplomacy
  steal_maps_country:0 "Send Speculatores"
