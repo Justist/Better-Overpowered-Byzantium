@@ -2809,7 +2809,7 @@ BYZ_ideas = {
 	byz_state_admin_reform = {
 		global_tax_modifier = 0.25
 	}
-	byz_admin_power = {
+	byz_corpus_iuris_civilis = {
 		stability_cost_modifier = -0.2
 	}
 	merchant_class = {
