@@ -20,7 +20,7 @@ cossacks_regiment = {
 
 marine_regiment = {
 	regiment_disembark_speed = 2
-	shock_damage_received = 0.25
+	shock_damage_received = -0.25
 }
 
 banner_regiment = {
