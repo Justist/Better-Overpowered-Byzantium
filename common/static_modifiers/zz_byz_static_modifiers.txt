@@ -9,6 +9,28 @@ development = {
 	local_amount_of_banners = 0.2
 }
 
+streltsy_regiment = {
+	fire_damage = 0.25
+	fire_damage_received = -0.25
+}
+
+cossacks_regiment = {
+	shock_damage = 0.25
+}
+
+marine_regiment = {
+	regiment_disembark_speed = 2
+	shock_damage_received = 0.25
+}
+
+banner_regiment = {
+	discipline = 0.5
+	land_maintenance_modifier = -1.0
+	regiment_manpower_usage = -1.0
+	reinforce_speed = 1
+
+}
+
 streltsy_modifier = {
 	stability_cost_modifier = -1.0
 }
