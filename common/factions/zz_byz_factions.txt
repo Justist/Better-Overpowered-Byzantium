@@ -8,10 +8,12 @@ byz_faction_clarissimi = {
 
 	modifier =
 	{
-		colonists = 2
+		may_explore = yes
+		colonists = 3
 		range = 1.0
+		envoy_travel_time = -0.5
+		colony_cost_modifier = -0.75
 		global_colonial_growth = 250
-		development_cost = -2.0
 		native_uprising_chance = -2.0
 	}
 }
@@ -22,9 +24,12 @@ byz_faction_spectabiles = {
 
 	modifier =
 	{
+		diplomats = 3
+		monthly_favor_modifier = 2.0
 		diplomatic_reputation = 2
 		advisor_cost = -0.8
 		improve_relation_modifier = 1.0
+		accept_vassalization_reasons = 100
 	}
 }
 

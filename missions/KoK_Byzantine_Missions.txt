@@ -1610,58 +1610,10 @@ MEE_BYZ_conquest_5 = {
 				type = byz_permanent_power_projection
 				amount = 5
 			}
-
-			custom_tooltip = " "
-
-			simple_dynamic_effect = {
-				first_custom_tooltip = BYZ_if_done_via_conquest
-				first_limit = "
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						OR = {
-							area = imereti_area
-							area = kartli_kakheti_area
-							area = samtskhe_area
-							area = circassia_area
-							area = armenia_area
-							area = shirvan_area
-						}
-						value = 18
-					}
-				"
-				first_effect = "
-					custom_tooltip = BYZ_the_conquered_areas_will_get_separatism
-					hidden_effect = {
-						every_owned_province = {
-							limit = {
-								OR = {
-									area = imereti_area
-									area = kartli_kakheti_area
-									area = samtskhe_area
-									area = circassia_area
-									area = armenia_area
-									area = shirvan_area
-								}
-							}
-							add_nationalism = -10
-						}
-					}
-				"
-				second_custom_tooltip = BYZ_if_done_via_war
-				second_limit = "
-					any_country = {
-						culture_group = iranian
-						total_development = 300
-						ROOT = {
-							has_won_war_against = {
-								who = PREV
-								max_years_since = 10
-							}
-						}
-					}
-				"
-				second_effect = "
-					create_general_with_pips = { tradition = 80 add_siege = 1 }
-				"
+			
+			country_event_with_insight = {
+				id = MEE_Byzantine_Events.61
+				insight_tooltip = BYZ_enable_buff_cossack_land_grants
 			}
 		}
 	}
@@ -2064,6 +2016,11 @@ MEE_BYZ_economy_1 = {
 				has_production_building_trigger = yes
 				development = 20
 			}
+			145 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
+				development = 20
+			}
 		}
 		effect = {
 			317 = {
@@ -2080,6 +2037,11 @@ MEE_BYZ_economy_1 = {
 				add_or_upgrade_production_building = yes
 				set_province_flag = BYZ_may_convert_to_silk
 				province_event = { id = MEE_Byzantine_Events.23 days = 180 } #the events cannot be fired at the same time
+			}
+			145 = {
+				add_or_upgrade_production_building = yes
+				set_province_flag = BYZ_may_convert_to_silk
+				province_event = { id = MEE_Byzantine_Events.23 days = 360 } #the events cannot be fired at the same time
 			}
 
 			custom_tooltip = " "
@@ -2669,18 +2631,11 @@ MEE_BYZ_economy_4 = {
 				"
 			}
 
-			# custom_tooltip = " "
-
 			custom_tooltip = BYZ_naval_commander_advisor_buff #bound to mission_completed
 
-			custom_tooltip = " "
-
-			complex_dynamic_effect = {
-				first_custom_tooltip = BYZ_if_we_have_taken_laesio_enormis
-				first_limit = " has_reform = laesio_enormis_reform "
-				first_effect = "
-					change_government_reform_progress = 200
-				"
+			country_event_with_insight = {
+				id = MEE_Byzantine_Events.60
+				insight_tooltip = BYZ_unlock_laesio_enormis_reform
 			}
 		}
 	}
@@ -3477,6 +3432,21 @@ MEE_BYZ_religion_2 = {
 					}
 				"
 			}
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				enable_propogate_religion_immunity = yes
+				enable_propagate_religion_in_abrahamic_provinces = yes
+			}
+			else = {
+				hidden_effect = {
+					enable_propogate_religion_immunity = yes
+					enable_propagate_religion_in_abrahamic_provinces = yes
+				}
+			}
+			country_event_with_insight = {
+				id = MEE_Byzantine_Events.59
+				insight_tooltip = BYZ_unlock_ecumenical_council_reform
+			}
 		}
 	}
 }
@@ -3560,6 +3530,14 @@ MEE_BYZ_military_3 = {
 		effect = {
 			add_country_modifier = {
 				name = BYZ_liquid_fire
+				duration = -1
+			}
+			add_country_modifier = {
+				name = eng_the_man_of_war
+				duration = -1
+			}
+			add_country_modifier = {
+				name = ITA_galleass_transport
 				duration = -1
 			}
 

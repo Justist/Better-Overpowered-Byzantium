@@ -1,0 +1,25 @@
+country_decisions = {
+    BOB_add_all_provinces_to_parliament = {
+        major = yes
+        color = { 255 0 0 } # red
+        potential = {
+            ai = no
+            has_parliament = yes
+        }
+        allow = {
+            ai = no
+            has_parliament = yes
+            any_owned_province = {
+                has_seat_in_parliament = no
+            }
+        }
+        effect = {
+            every_owned_province = {
+                set_seat_in_parliament = yes
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

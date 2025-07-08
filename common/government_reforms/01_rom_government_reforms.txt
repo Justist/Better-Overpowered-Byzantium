@@ -1,29 +1,31 @@
-byz_government_reform = {
-	icon = "byz_government_reform"
+roman_empire_reform = {
+	icon = "roman_empire"
 	allow_normal_conversion = yes
 	potential = {
+		has_dlc = "Domination"
+		primary_culture = roman
 		OR = {
-			tag = BYZ
 			tag = ROM
+			tag = BYZ
+			is_playing_custom_nation = yes
 		}
 	}
 	lock_level_when_selected = yes
-	legacy_equivalent = byz_legacy_government_reform
-
+	nation_designer_trigger = {
+		primary_culture = roman
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
 	modifiers = {
 		# Military
 		governing_capacity = 600
 		governing_capacity_modifier = 2.0
+		governing_cost = -0.25
+		max_absolutism = 30
+		yearly_absolutism = 10
+		max_absolutism_effect = 0.2
 		amount_of_banners = 1.0
 	}
-
-	conditional = {
-		allow = { has_dlc = "King of Kings" }
-		custom_attributes = {
-			enables_pronoias = yes
-		}
-	}
-
 	assimilation_cultures = {
 		altaic = {
 			artillery_cost = -0.2
@@ -161,88 +163,36 @@ byz_government_reform = {
 			trade_efficiency = 0.1
 		}
 	}
-
+	fixed_rank = 3
 	conditional = {
-		allow = { has_dlc = "Domination" }
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			enables_pronoias = yes 
+		}
+	}
+	ai = {
+		factor = 1
+	}
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
 		government_abilities = {
 			byzantine_mechanic
 		}
 		claim_states = yes
 	}
-
-
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
 		allow_banners = yes
-	}
-}
-
-
-byz_senate_reform = {
-	icon = "byz_senate_reform"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			tag = BYZ
-			tag = ROM
-		}
-	}
-	lock_level_when_selected = yes
-
-	modifiers = {
-		global_unrest = -2
-		tolerance_own = 5
-		governing_capacity = 600
-		governing_capacity_modifier = 2.0
-		min_autonomy_in_territories = -0.4
-	}
-
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	factions = {
-		byz_faction_illustres
-		byz_faction_spectabiles
-		byz_faction_clarissimi
-	}
-	ai = {
-		factor = 0
-	}
-	# Still to add factions in the senate
-}
-
-
-byz_ecumenical_council = {
-	icon = "byz_ecumenical_council"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			tag = BYZ
-			tag = ROM
-		}
-	}
-	potential = {
-		has_dlc = "King of Kings"
-		has_unlocked_government_reform = { government_reform = byz_ecumenical_council }
-	}
-	lock_level_when_selected = yes
-	force_conversion_gives_global_holy_war_released_modifier = yes
-	modifiers = {
-		yearly_patriarch_authority = 0.005
-		warscore_cost_vs_other_religion = -0.1
-		enforce_religion_cost = -0.5
-	}
-	effect = {
-		custom_tooltip = world_crusade_tt
-	}
-	custom_attributes = {
-		has_upgraded_holy_wars = yes
-	}
-	custom_attributes = {
-		BYZ_buff_klirikoi_land_grants = yes
-	}
-	ai = {
-		factor = 1000
+		custom_attributes = {
+			can_recruit_banners_from_primary_culture_provinces = yes
 	}
 }

@@ -21,6 +21,7 @@ strategikon_modifier = {
 	fire_damage_received = -0.2
 	fire_damage = 0.2
 	shock_damage_received = -0.2
+	infantry_fire = 1
 	artillery_fire = 1
 	leader_land_shock = 2
 	leader_land_fire = 2
@@ -68,4 +69,70 @@ chastening_of_venice = {
 	local_development_cost = -0.3
 	local_autonomy = -0.05
 	local_unrest = -4
+}
+
+council_of_the_chamber_mod = {
+	overextension_impact_modifier = -0.20
+	ae_impact = -0.20
+}
+
+council_of_finance_mod = {
+	culture_conversion_cost = -0.9
+	culture_conversion_time = -0.9
+}
+
+council_of_the_inquisition_mod = {
+	development_cost = -2.0
+	idea_cost = -0.9
+}
+
+council_of_europe_mod = {
+	monthly_favor_modifier = 2.0
+	diplomats = 3
+}
+
+council_of_mediterranean_mod = {
+	global_trade_goods_size = 1
+	trade_steering = 0.5
+	caravan_power = 0.2
+	merchants = 3
+	trade_range_modifier = 0.5
+}
+
+council_of_the_indies_mod = {
+	envoy_travel_time = -0.5
+	global_colonial_growth = 250
+	colony_cost_modifier = -0.75
+	treasure_fleet_income = 1.0
+	colonists = 3
+}
+
+council_of_the_crusade_mod = {
+	province_warscore_cost = -0.20
+	land_morale = 0.2
+	siege_ability = 0.8
+	enable_forced_march = yes
+	force_march_free = yes
+}
+
+council_of_military_orders_mod = {
+	leader_land_fire = 4
+	leader_land_shock = 4
+	leader_land_manuever = 4
+	leader_siege = 4
+	max_general_fire = 2
+	max_general_shock = 2
+	max_general_maneuver = 2
+	max_general_siege = 2
+}
+
+council_of_the_armada_mod = {
+	leader_naval_fire = 4
+	leader_naval_shock = 4
+	leader_naval_manuever = 4
+	leader_siege = 4
+	max_admiral_fire = 2
+	max_admiral_shock = 2
+	max_admiral_maneuver = 2
+	max_admiral_siege = 2
 }

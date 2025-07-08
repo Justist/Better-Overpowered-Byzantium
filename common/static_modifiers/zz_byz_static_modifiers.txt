@@ -15,6 +15,11 @@ streltsy_regiment = {
 }
 
 cossacks_regiment = {
+	discipline = 0.5
+	land_maintenance_modifier = -1.0
+	regiment_manpower_usage = -1.0
+	reinforce_speed = 1
+	cavalry_shock = 1
 	shock_damage = 0.25
 }
 
@@ -52,4 +57,21 @@ patriarch_authority_global = {
 equipped_pronoiar_modifier = {
 	land_morale = 0.1
 	land_maintenance_modifier = -0.1
+}
+
+navy_tradition = {
+	recover_navy_morale_speed = 0.1
+	naval_morale = 0.25
+	trade_steering = 1.0
+	privateer_efficiency = 0.25
+	enuchs_influence = 0.1
+	mr_traders_influence = 0.1
+	blockade_efficiency = 1
+	sailors_recovery_speed = 0.2
+	monthly_arabic_trade_influence_power = 0.2
+	burghers_loyalty_modifier = 0.05
+	vaisyas_loyalty_modifier = 0.05
+	allowed_geobukseon_fraction = 0.5
+	allowed_galleass_fraction = 0.5
+	allowed_man_of_war_fraction = 0.5
 }

@@ -1,5 +1,5 @@
 basil_order = {
-    icon = GFX_holy_order_jesuits
+    icon = GFX_holy_order_basil_order
     trigger = {
 		OR = {
 			tag = BYZ
@@ -15,12 +15,13 @@ basil_order = {
     }
     modifier = {
         local_build_cost = -0.55
+		local_build_time = -0.55
         local_state_maintenance_modifier = -0.2
     }
 }
 
 theodore_order = {
-    icon = GFX_holy_order_dominicans
+    icon = GFX_holy_order_theodore_order
     trigger = {
 		OR = {
 			tag = BYZ
@@ -46,7 +47,10 @@ theodore_order = {
     per_province_abandon_effect = {
     }
     modifier = {
-        local_culture_conversion_cost = -0.9
+		local_great_project_upgrade_cost = -0.55
+		local_great_project_upgrade_time = -0.55
+        allowed_num_of_manufactories = 1
+		institution_growth = 8 		
         local_state_maintenance_modifier = -0.2
     }
 }

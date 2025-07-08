@@ -121,7 +121,7 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_faction_byz_faction_clarissimi"	
-		texturefile = "gfx//interface//guilds_icon.tga"
+		texturefile = "gfx//interface//clarissimi_icon.tga"
 	}
 	spriteType = {
 		name = "GFX_faction_bg_byz_faction_spectabiles"	
@@ -130,7 +130,7 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_faction_byz_faction_spectabiles"	
-		texturefile = "gfx//interface//traders_icon.tga"
+		texturefile = "gfx//interface//spectabiles_icon.tga"
 	}
 	spriteType = {
 		name = "GFX_faction_bg_byz_faction_illustres"	
@@ -139,7 +139,7 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_faction_byz_faction_illustres"	
-		texturefile = "gfx//interface//aristocrats_icon.tga"
+		texturefile = "gfx//interface//illustres_icon.tga"
 	}
 	
 	# Revolutionary Republics

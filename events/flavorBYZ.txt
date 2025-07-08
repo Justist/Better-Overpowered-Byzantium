@@ -3760,3 +3760,139 @@ country_event = {
 
 	}
 }
+
+country_event = {
+	id = MEE_Byzantine_Events.59
+	title = MEE_Byzantine_Events.59.t
+	desc = MEE_Byzantine_Events.59.d
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = MEE_Byzantine_Events.59.a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = BYZ_unlock_ecumenical_council_reform
+		hidden_effect = {
+			unlock_government_reform = {
+				government_reform = byz_ecumenical_council
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { reform_level = 4 }
+			}
+			change_government_reform_progress = 100
+		}
+		else = {
+			custom_tooltip = BYZ_enact_ecumenical_council_reform
+			hidden_effect = {
+				add_government_reform = byz_ecumenical_council
+			}
+		}
+	}
+
+	option = {
+		name = MEE_Byzantine_Events.59.b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		trigger = {
+			reform_level = 4
+		}
+		change_government_reform_progress = 50
+		hidden_effect = {
+			unlock_government_reform = {
+				government_reform = byz_ecumenical_council
+			}
+		}
+
+		custom_tooltip = BYZ_unlock_ecumenical_council_reform
+	}
+}
+
+country_event = {
+	id = MEE_Byzantine_Events.60
+	title = MEE_Byzantine_Events.60.t
+	desc = MEE_Byzantine_Events.60.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = MEE_Byzantine_Events.60.a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = BYZ_unlock_laesio_enormis_reform
+		hidden_effect = {
+			unlock_government_reform = {
+				government_reform = laesio_enormis_reform
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { reform_level = 8 }
+			}
+			change_government_reform_progress = 100
+		}
+		else = {
+			custom_tooltip = BYZ_enact_laesio_enormis_reform
+			hidden_effect = {
+				add_government_reform = laesio_enormis_reform
+			}
+		}
+	}
+
+	option = {
+		name = MEE_Byzantine_Events.60.b
+
+		ai_chance = {
+			factor = 0
+		}
+
+		trigger = {
+			reform_level = 8
+		}
+		change_government_reform_progress = 50
+		hidden_effect = {
+			unlock_government_reform = {
+				government_reform = laesio_enormis_reform
+			}
+		}
+
+		custom_tooltip = BYZ_unlock_laesio_enormis_reform
+	}
+}
+
+country_event = {
+	id = MEE_Byzantine_Events.61
+	title = MEE_Byzantine_Events.61.t
+	desc = MEE_Byzantine_Events.61.d
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = MEE_Byzantine_Events.61.a
+
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = BYZ_enable_buff_cossack_land_grants
+		set_country_flag = BYZ_buff_cossack_land_grants
+	}
+}

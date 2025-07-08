@@ -1,0 +1,64 @@
+spriteTypes = {
+
+	# Byzantine flagship
+	spriteType = {
+		name = "GFX_flagship_byzantine_flagship"
+		texturefile = "gfx//interface//byzantine_flagship.tga"
+		loadType = "INGAME"
+	}
+	
+	# Byzantine privileges
+	spriteType = {
+		name = "GFX_privilege_estate_nobles_increase_professionalism"
+		texturefile = "gfx//interface//privileges//privilege_nobles_increase_professionalism.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_privilege_estate_nobles_raise_artillery"
+		texturefile = "gfx//interface//privileges//privilege_estate_nobles_raise_artillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_privilege_estate_burghers_navy"
+		texturefile = "gfx//interface//privileges//privilege_estate_burghers_navy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_privilege_estate_clergy_barbarians"
+		texturefile = "gfx//interface//privileges//privilege_estate_clergy_barbarians.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_privilege_estate_cossacks_finest_horses"
+		texturefile = "gfx//interface//privileges//privilege_estate_cossacks_finest_horses.tga"
+		loadType = "INGAME"
+	}
+	
+	# Byzantine holy orders
+	spriteType = {
+		name = "GFX_holy_order_basil_order"
+		texturefile = "gfx/interface/holy_orders/basil_order.dds"
+		noOfFrames = 4
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_order_theodore_order"
+		texturefile = "gfx/interface/holy_orders/theodore_order.dds"
+		noOfFrames = 4
+		loadType = "INGAME"
+	}
+	
+	# Byzantine government reforms
+	spriteType = {
+		name = "government_reform_byz_government_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//domination//byz_government_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_byz_senate_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//domination//byz_senate_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_byz_ecumenical_council"
+		texturefile = "gfx//interface//government_reform_icons//dlc//domination//byz_ecumenical_council.dds"
+	}
+}

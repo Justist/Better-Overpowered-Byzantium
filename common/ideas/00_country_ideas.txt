@@ -9559,47 +9559,55 @@ MRA_ideas = {
 }
 
 ROM_ideas = {
-	start = {
-		discipline = 0.05
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
+		start = {
+		# Economy
+		advisor_cost = -0.2
+		development_cost = -0.2
+		all_power_cost = -0.1
+		administrative_efficiency = 0.35
+		# Unrest and stability
+		global_unrest = -2
 	}
 
 	bonus = {
-		global_manpower_modifier = 0.33
+		land_morale = 0.2
+		discipline = 0.1
 	}
 
 	trigger = {
-		tag = ROM
+		OR = {
+			tag = BYZ
+			tag = ROM
+		}
 	}
 	free = yes
-
+	
 	pax_romana = {
 		global_unrest = -2
+		years_of_nationalism = -5
 	}
 	legacy_of_rome = {
 		diplomatic_reputation = 2
+		prestige = 2
 	}
-	spqr = {
-		stability_cost_modifier = -0.2
+	roman_architecture = {
+		trade_goods_size = 1.0
+		global_manpower_modifier = 0.20
+	}
+	imperium_sine_fine = {
+		core_creation = -0.25
+		years_of_nationalism = -10
+	}
+	merchant_class = {
+		trade_steering = 0.5
+		caravan_power = 0.2
 	}
 	roman_legions = {
 		infantry_power = 0.10
 		land_forcelimit_modifier = 0.15
 	}
-	roman_architecture = {
-		production_efficiency = 0.2
-	}
-	imperial_bureaucracy = {
-		global_tax_modifier = 0.1
-		administrative_efficiency = 0.05
-	}
-	imperium_sine_fine = {
-		core_creation = -0.25
-		years_of_nationalism = -5
+	ecumenical_patriarch = {
+		global_missionary_strength = 0.2
 	}
 }
 
