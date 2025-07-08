@@ -101,7 +101,7 @@
 
  # New events, cb, estate privileges
  byzstrong_events.1.t:0 "Election of a new heir"
- byzstrong_events.1.desc:0 "The Byzantine Empire is semi-republican, which means that the heir to the Emperor is elected by the Senate and the Army. Our beloved [Root.Monarch.GetTitle] [Root.Monarch.GetName] has brought forward three candidates. Who shall we appoint as the rightful heir?"
+ byzstrong_events.1.desc:0 "The Byzantine Empire is semi-republican, which means that the heir to the Emperor is elected by the Senate and the Army. Our beloved [[Root.Monarch.GetTitle] [[Root.Monarch.GetName] has brought forward three candidates. Who shall we appoint as the rightful heir?"
  byzstrong_events.1.a:0 "The strongest son"
  byzstrong_events.1.b:0 "The smartest nephew"
  byzstrong_events.1.c:0 "Our beloved daughter"
@@ -149,7 +149,7 @@
  alert_can_use_russian_ability_instant:0 "§YCan use a Byzantine ability!§!"
  HAVE_LESS_STRELTSY_THAN:1 "Have less Akritoi than §Y$VALUE$§!.\n"
  HAVE_AT_LEAST_STRELTSY_THAN:1 "Have at least §Y$VALUE$§! Akritoi.\n"
- 
+
  # Hispanic-style stuff
  ability_system_of_councils_mechanic:0 "Roman Imperial Council"
  system_of_councils_mechanic:0 "Roman Imperial Council"
@@ -159,7 +159,7 @@
  royal_council_interaction_tooltip:0 "Can choose one of the following modifiers for §Y10 years§!:\n§YCouncil of the Sekretou§!:\n    Overextention Impact: §G-20.0%§!\n    Aggressive Expansion: §G-20.0%§!\n\n§YCouncil of the Exarchatou§!:\n    Culture Conversion Cost: §G-90.0%§!\n    Culture Conversion Time: §G-90.0%§!\n\n§YCouncil of the Eparchou§!:\n    Development Cost: §G-200.0%§!\n    Idea Cost: §G-90.0%§!"
  state_council_interaction:0 "Convene the Logothesion"
  state_council_interaction_desc:0 ""
- state_council_interaction_tooltip:1 "Can choose one of the following modifiers for §Y10 years§!:\n§YCouncil of the Logothetes tou Dromou§!:\n    Monthly Favour Gain: §G+200.0%§!\n    Diplomats: §G+3§!\n\n§\n§YCouncil of the Sakellion§!:\n    Trade Good Size: §G+1.00§!\n    Trade Steering: §G+50.0%§!\n    Caravan Power: §G+20.0%§!\n    Merchants: §G+3§!\n    Trade Range: §G+50.0%§!\n\n§YCouncil of the Sekreton ton Exoterikon§!:\n    Envoy Travel Time: §G-90.0§! \n    Global Settler Increase: §G+250.0§! \n    Colonial Maintenance: §G-75.0%§! \n    Treasure Fleet Income: §G+100.0%§! \n    Colonists: §G+3§!"
+ state_council_interaction_tooltip:1 "Can choose one of the following modifiers for §Y10 years§!:\n§YCouncil of the Logothetes tou Dromou§!:\n    Monthly Favour Gain: §G+200.0%§!\n    Diplomats: §G+3§!\n\n\n§YCouncil of the Sakellion§!:\n    Trade Good Size: §G+1.00§!\n    Trade Steering: §G+50.0%§!\n    Caravan Power: §G+20.0%§!\n    Merchants: §G+3§!\n    Trade Range: §G+50.0%§!\n\n§YCouncil of the Sekreton ton Exoterikon§!:\n    Envoy Travel Time: §G-90.0§! \n    Global Settler Increase: §G+250.0§! \n    Colonial Maintenance: §G-75.0%§! \n    Treasure Fleet Income: §G+100.0%§! \n    Colonists: §G+3§!"
  war_council_interaction:0 "Convene the Strategikon"
  war_council_interaction_desc:0 ""
  war_council_interaction_tooltip:0 "Can choose one of the following modifiers for §Y10 years§!:\n§YCouncil of the Ekpolemiston§!:\n    Province Warscore Cost: §G-20.0%§!\n    Morale of Armies: §G+20.0%§!\n    Siege Ability: §G+80.0%§!\n    Force March: §GEnabled§!\n    Improved Force March: §GFree§!\n\n§YCouncil of the Hetaireiakon Scholeion§!:\n    Land Leader Fire: §G+4§!\n    Land Leader Shock: §G+4§!\n    Land Leader Maneuver: §G+4§!\n    Leader Siege: §G+4§!\n    Max General Fire: §G+2§!\n    Max General Shock: §G+2§!\n    Max General Maneuver: §G+2§!\n    Max General Siege: §G+2§!\n\n§YCouncil of the Nauarchikon Scholeion§!:\n    Naval Leader Fire: §G+4§!\n    Naval Leader Shock: §G+4§!\n    Naval Leader Maneuver: §G+4§!\n    Leader Siege: §G+4§!\n    Max Admiral Fire: §G+2§!\n    Max Admiral Shock: §G+2§!\n    Max Admiral Maneuver: §G+2§!\n    Max Admiral Siege: §G+2§!"
@@ -187,7 +187,7 @@
  desc_council_of_military_orders_mod:0 "The Roman Imperial Council has been called in."
  council_of_the_armada_mod:0 "Council of the Nauarchikon Scholeion"
  desc_council_of_the_armada_mod:0 "The Roman Imperial Council has been called in."
- 
+
  #Recurring events for the Hispanic-style System of Roman Imperial Council
  hispanic_monarchy_events.1.t:0 "Council of the Basilikon Convened"
  hispanic_monarchy_events.1.desc:0 "After thoughtful deliberations, the secretaries of the different councils have come to the consensus that we must focus the efforts of our government during the coming years on internal affairs, their actions being coordinated by the Council of the Basilikon. It is up to us to decide which specific council should lead the government actions."
@@ -309,7 +309,7 @@
  byz_bribe_build3:0 "Build Marketplace"
  byz_bribe_build4:0 "Build Barracks"
  string_orthodox_icons:0 "\n£DLC_tr Patriarch Authority can be increased by establishing Holy Orders in your states.\n\n£DLC_tr Orthodox countries can use Patriarch Authority to commission religious §YIcons§! that give bonuses for 20 years.\n\n"
- 
+
  # Government Reform, Privilege Buffs & Mission Flavour
  BYZ_enact_ecumenical_council_reform:0 "Enact §YEcumenical Council§! Tier 4 Government Reform."
  BYZ_unlock_ecumenical_council_reform:1 "Unlock the §YRestore the Ecumenical Council§! Government Reform, which provides us with the following benefits:\nYearly Patriach Authority: §G+0.5%§!\nWarscore Cost vs Other Religions: §G-10.0%§!\nCost of enforcing religion through war: §G-50.0%§!\n\n§YGovernment Mechanics§!:\nStrengthen the '§YKlirikoi Land Rights§!' Estate Privilege, making it no longer cost §YMaximum Absolutism§! and will now provide §G+0.5%§! Yearly Patriach Authority.\n\nThis will unlock the ability to use the §YGreat Holy War Casus Belli§!, allowing you to force your religion even on neighboring §YHeathens§!. \nWith the §YMission to Civilize§! reform, non-bordering §YPagan§! nations may be targeted by the §YGreat Holy War§!. \nWith the §YDeus Vult§! idea, non-bordering nations may be targeted by the §YGreat Holy War§!."
@@ -321,20 +321,20 @@
  byz_ecumenical_council_desc:0 "The Ecumenical Councils were grand assemblies of bishops tasked with defining doctrine and resolving disputes in the Church. Reviving such a council would reaffirm religious unity, address theological divisions, and strengthen imperial influence over spiritual matters."
  mechanic_BYZ_buff_klirikoi_land_grants_yes:2 "Strengthen the '§YKlirikoi Land Rights§!' Estate Privilege, making it no longer cost §YMaximum Absolutism§! and will now provide §G+0.5%§! Yearly Patriach Authority."
  restoration_of_the_senate_reform:0 "Strengthen the Senate"
- 
+
  BYZ_enact_laesio_enormis_reform:0 "Enact §YLaesio Enormis§! Tier 8 Government Reform."
- BYZ_unlock_laesio_enormis_reform:1 "Enact the §YLaesio Enormis§! Government Reform, which provides us with the following benefits:\nTrade Steeing: §G+15.0%§!\nMonthly Autonomy Change: §G-0.05§!\nGoods Produced Modifier: §G+15.0%§!\nTrade Company Governing Cost: §G-10.0%§!\nGlobal Prosperity Growth: §G+0.50§!\nEugeneis Loyalty Equilibrium: §R-5.0%§!\nEugeneis Influence: §G-10.0%§!\n\n§YGovernment Mechanics§!:\nStrengthen the '§YEmporoi Land Rights§!' Estate Privilege, making it no longer cost §YMaximum Absolutism§! and will now provide §G-50.0%§! Reduced trade penalty on non main trade node.\nCan establish §YTrade Protectorates§"
+ BYZ_unlock_laesio_enormis_reform:1 "Enact the §YLaesio Enormis§! Government Reform, which provides us with the following benefits:\nTrade Steeing: §G+15.0%§!\nMonthly Autonomy Change: §G-0.05§!\nGoods Produced Modifier: §G+15.0%§!\nTrade Company Governing Cost: §G-10.0%§!\nGlobal Prosperity Growth: §G+0.50§!\nEugeneis Loyalty Equilibrium: §R-5.0%§!\nEugeneis Influence: §G-10.0%§!\n\n§YGovernment Mechanics§!:\nStrengthen the '§YEmporoi Land Rights§!' Estate Privilege, making it no longer cost §YMaximum Absolutism§! and will now provide §G-50.0%§! Reduced trade penalty on non main trade node.\nCan establish §YTrade Protectorates§!"
  MEE_Byzantine_Events.60.t:0 "Enact the Laesio Enormis"
  MEE_Byzantine_Events.60.d:1 "Laesio enormis is the idea that, if a contract is legally considered unfair, the harmed party may withdraw from the agreement. This idea of corrective justice especially gained traction in the Byzantine Empire, near the turn of the millennium, as the poor were selling land to the nobles at an excessively low price."
  MEE_Byzantine_Events.60.a:0 "Let us reform it!"
  MEE_Byzantine_Events.60.b:0 "The time is not right."
  mechanic_BYZ_buff_emporoi_land_grants_yes:2 "Strengthen the '§YEmporoi Land Rights§!' Estate Privilege, making it no longer cost §YMaximum Absolutism§! and will now provide §G-50.0%§! Reduced trade penalty on non main trade node."
- 
+
  BYZ_enable_buff_cossack_land_grants:1 "Strengthen the '§YCossack Land Rights§!' Estate Privilege, making it grant Cavalry to Infantry Ratio §G+10.0%§!, Cossack Force Limit Fraction §G+50.0%§! and Cavalry Combat Ability §G+20.0%§! and will no longer take any §YAbsolutism§!."
  MEE_Byzantine_Events.61.t:0 "Byzantine Kataphraktoi Restored to Glory"
  MEE_Byzantine_Events.61.d:1 "Centuries ago, our enemies trembled at the fierce and unstoppable charge of the Kataphraktoi. With renewed access to prized Eastern horse breeds and a growing military budget, we now have the means and resources to restore this legendary force to its former glory once again."
  MEE_Byzantine_Events.61.a:0 "Imperial Breeds for the Kataphraktoi!"
-    
+
  INF_ADD_NAVY_TRADITION_OR_DIP_POWER: "All the excess §YNavy Tradition§! will be converted into §G3§! §YDiplomatic Power§! per 1 §YNavy Tradition§!."
  INF_ADD_DEVOTION_OR_MIL_POWER: "All the excess §YDevotion§! will be converted into §G3§! §YMilitary Power§! per 1 §YDevotion§!."
  INF_ADD_CHURCH_POWER_OR_ADM_POWER: "All the excess §YChurch Power§! will be converted into §G1§! §YAdministrative Power§! per 1 §YChurch Power§!."
