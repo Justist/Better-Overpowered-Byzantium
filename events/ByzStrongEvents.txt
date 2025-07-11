@@ -20,12 +20,10 @@ country_event = {
 		has_heir = no
 	}
 
+	mean_time_to_happen = { days = 7 }
+
 	# Set description
 	desc = byzstrong_events.1.desc
-
-	mean_time_to_happen = {
-		days = 7
-	}
 
 	option = {
 		name = byzstrong_events.1.a #Son
