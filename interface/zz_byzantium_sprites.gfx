@@ -6,7 +6,7 @@ spriteTypes = {
 		texturefile = "gfx//interface//byzantine_flagship.tga"
 		loadType = "INGAME"
 	}
-	
+
 	# Byzantine privileges
 	spriteType = {
 		name = "GFX_privilege_estate_nobles_increase_professionalism"
@@ -33,7 +33,7 @@ spriteTypes = {
 		texturefile = "gfx//interface//privileges//privilege_estate_cossacks_finest_horses.tga"
 		loadType = "INGAME"
 	}
-	
+
 	# Byzantine holy orders
 	spriteType = {
 		name = "GFX_holy_order_basil_order"
@@ -47,7 +47,7 @@ spriteTypes = {
 		noOfFrames = 4
 		loadType = "INGAME"
 	}
-	
+
 	# Byzantine government reforms
 	spriteType = {
 		name = "government_reform_byz_government_reform"
@@ -60,5 +60,27 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_byz_ecumenical_council"
 		texturefile = "gfx//interface//government_reform_icons//dlc//domination//byz_ecumenical_council.dds"
+	}
+
+	# Byzantine kataphraktoi privileges
+	spriteType = {
+		name = "GFX_privilege_conscript_cossack_general"
+		texturefile = "gfx//interface//privileges//privilege_conscript_cossack_general.tga"
+	}
+	spriteType = {
+		name = "GFX_privilege_conscript_cossack_breeding"
+		texturefile = "gfx//interface//privileges//privilege_conscript_cossack_breeding.tga"
+	}
+	spriteType = {
+		name = "GFX_privilege_conscript_cossack_service"
+		texturefile = "gfx//interface//privileges//privilege_conscript_cossack_service.tga"
+	}
+	spriteType = {
+		name = "GFX_privilege_conscript_cossack_cavalry"
+		texturefile = "gfx//interface//privileges//privilege_conscript_cossack_cavalry.tga"
+	}
+	spriteType = {
+		name = "GFX_privilege_conscript_cossack_regiments"
+		texturefile = "gfx//interface//privileges//privilege_conscript_cossack_regiments.tga"
 	}
 }

@@ -1,0 +1,17 @@
+on_monthly_pulse_country = {
+    events = {
+        MEE_Byzantine_Events.62
+    }
+}
+
+on_monthly_pulse_country = {
+    events = {
+        MEE_Byzantine_Events.63
+    }
+}
+
+on_monthly_pulse_country = {
+    events = {
+        MEE_Byzantine_Events.66
+    }
+}

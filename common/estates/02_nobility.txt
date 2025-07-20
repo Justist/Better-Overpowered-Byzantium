@@ -228,6 +228,12 @@ estate_nobles =
 		}
 	}
 	custom_name = {
+		desc = estate_eugeneis
+		trigger = {
+			tag = ROM
+		}
+	}
+	custom_name = {
 		desc = estate_nakomse
 		trigger = {
 			primary_culture = mossi

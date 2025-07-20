@@ -12,7 +12,7 @@ country_event = {
 	id = flavor_byz.1
 	title = flavor_byz.1.t
 	desc = flavor_byz.1.d
-	picture = WOUNDED_SOLDIERS_eventPicture
+	picture = GREAT_FIRE_eventPicture
 
 	is_triggered_only = yes
 	major = yes
@@ -119,7 +119,10 @@ country_event = {
 			}
 			custom_tooltip = BYZ_may_only_build_in_112
 			hidden_effect = {
-				112 = {
+				every_owned_province = {
+					limit = {
+						has_port = yes
+					}
 					add_province_modifier = {
 						name = BYZ_local_galleass
 						duration = -1
@@ -145,7 +148,7 @@ country_event = {
 	id = flavor_byz.2
 	title = flavor_byz.2.t
 	desc = flavor_byz.2.d
-	picture = RELIGION_eventPicture
+	picture = ORTHODOX_eventPicture
 
 	is_triggered_only = yes
 
@@ -1117,7 +1120,7 @@ country_event = {
 	id = MEE_Byzantine_Events.16
 	title = MEE_Byzantine_Events.16.t
 	desc = MEE_Byzantine_Events.16.d
-	picture = RELIGION_eventPicture
+	picture = ORTHODOX_eventPicture
 
 	is_triggered_only = yes
 	major = yes
@@ -1166,7 +1169,7 @@ country_event = {
 	id = MEE_Byzantine_Events.17
 	title = MEE_Byzantine_Events.17.t
 	desc = MEE_Byzantine_Events.17.d
-	picture = RELIGION_eventPicture
+	picture = ORTHODOX_eventPicture
 
 	is_triggered_only = yes
 	major = yes
@@ -1203,7 +1206,7 @@ country_event = {
 	id = MEE_Byzantine_Events.18
 	title = MEE_Byzantine_Events.18.t #ecumenical council
 	desc = MEE_Byzantine_Events.18.d
-	picture = RELIGION_eventPicture
+	picture = ORTHODOX_eventPicture
 
 	is_triggered_only = yes
 
@@ -1441,7 +1444,8 @@ country_event = {
 		}
 
 		custom_tooltip = BYZ_we_will_adopt_color_of_roman_empire
-		change_country_color = { color = { 167 10 100 } }
+		change_country_color = { color = { 135 5 80 } }
+		set_country_flag = chose_option_MEE_Byzantine_Events_22_b
 	}
 
 	# option = {
@@ -3765,11 +3769,11 @@ country_event = {
 	id = MEE_Byzantine_Events.59
 	title = MEE_Byzantine_Events.59.t
 	desc = MEE_Byzantine_Events.59.d
-	picture = RELIGION_eventPicture
+	picture = ORTHODOX_eventPicture
 
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = MEE_Byzantine_Events.59.a
 
@@ -3827,7 +3831,7 @@ country_event = {
 
 	is_triggered_only = yes
 	major = yes
-	
+
 	option = {
 		name = MEE_Byzantine_Events.60.a
 
@@ -3884,7 +3888,7 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = MEE_Byzantine_Events.61.a
 
@@ -3894,5 +3898,276 @@ country_event = {
 
 		custom_tooltip = BYZ_enable_buff_cossack_land_grants
 		set_country_flag = BYZ_buff_cossack_land_grants
+	}
+}
+
+country_event = {
+    id = MEE_Byzantine_Events.62
+	title = MEE_Byzantine_Events.62.t
+	desc = MEE_Byzantine_Events.62.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	hidden = yes
+
+	trigger = {
+        AND ={
+			is_subject = yes
+			OR = {
+				is_subject_of_type = pronoia_subject_type
+				is_subject_of_type = hereditary_pronoia_subject_type
+			}
+		}
+    }
+    immediate = {
+        if = {
+			limit = { is_subject_of = BYZ }
+			change_country_color = {
+				color = { 169 65 122 }
+			}
+		}
+		if = {
+			limit = {
+				is_subject_of = BYZ
+				overlord = {
+					has_country_flag = chose_option_MEE_Byzantine_Events_22_b
+				}
+			}
+			change_country_color = {
+				color = { 155 6 92 }
+			}
+		}
+		if = {
+			limit = { is_subject_of = ROM }
+			change_country_color = {
+				color = { 155 6 92 }
+			}
+		}
+		set_country_flag = has_overlords_colour
+		if = {
+            limit = { NOT = { has_country_flag = BYZ_pronoia_religious_drive } }
+            set_country_flag = BYZ_pronoia_religious_drive
+			fire_country_event = { id = MEE_Byzantine_Events.64 days = 1 }
+        }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = coloured_subjects.1.a
+	}
+}
+
+country_event = {
+	id = MEE_Byzantine_Events.63
+	title = MEE_Byzantine_Events.63.t
+	desc = MEE_Byzantine_Events.63.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		AND = {
+			has_country_flag = has_overlords_colour
+			OR = {
+				AND = {
+					is_subject = yes
+					NOT = { is_subject_of_type = pronoia_subject_type }
+					NOT = { is_subject_of_type = hereditary_pronoia_subject_type }
+				}
+				is_subject = no
+			}
+		}
+	}
+
+	immediate = {
+		restore_country_color = yes
+		clr_country_flag = has_overlords_colour
+		restore_country_name = yes
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = coloured_subjects.2.a
+	}
+}
+
+country_event = {
+    id = MEE_Byzantine_Events.64
+	title = MEE_Byzantine_Events.64.t
+	desc = MEE_Byzantine_Events.64.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	hidden = yes
+
+	trigger = {
+        AND ={
+			is_subject = yes
+			OR = {
+				is_subject_of_type = pronoia_subject_type
+				is_subject_of_type = hereditary_pronoia_subject_type
+			}
+			has_country_flag = BYZ_pronoia_religious_drive
+		}
+    }
+    immediate = {
+		add_country_modifier = {
+            name = "pronoia_religious_drive"
+            duration = 3650
+        }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = coloured_subjects.1.a
+	}
+}
+
+country_event = {
+	id = MEE_Byzantine_Events.65
+	title = MEE_Byzantine_Events.65.t
+	desc = MEE_Byzantine_Events.65.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	hidden = yes
+
+	trigger = {
+        is_subject = yes
+        overlord = {
+            OR = {
+                tag = BYZ
+                tag = ROM
+            }
+        }
+    }
+
+	immediate = {
+        add_country_modifier = {
+            name = subject_supply_support
+            duration = -1
+        }
+    }
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = MEE_Byzantine_Events.65.a
+	}
+}
+
+country_event = {
+	id = MEE_Byzantine_Events.66
+	title = MEE_Byzantine_Events.66.t
+	desc = MEE_Byzantine_Events.66.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		has_country_modifier = BYZ_liquid_fire
+		has_country_modifier = BYZ_may_construct_galleass
+    }
+
+	immediate = {
+    every_owned_province = {
+        limit = {
+            has_port = yes
+        }
+        add_province_modifier = {
+            name = BYZ_local_man_of_war
+            duration = -1
+        }
+        add_province_modifier = {
+            name = BYZ_local_galleass
+            duration = -1
+        }
+    }
+}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = MEE_Byzantine_Events.66.a
+	}
+}
+
+province_event = {
+	id = MEE_Byzantine_Events.67
+	title = MEE_Byzantine_Events.67.t
+	desc = MEE_Byzantine_Events.67.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		owner = {
+			is_subject = yes
+			is_subject_of_type = personal_union
+			OR = {
+				overlord = { tag = BYZ }
+				overlord = { tag = ROM }
+			}
+		}
+		has_owner_culture = no
+		is_core = owner
+		NOT = { nationalism = 1 }
+
+		OR = {
+			development = 10
+			has_port = yes
+			any_neighbor_province = {
+				has_owner_culture = yes
+				owned_by = ROOT
+			}
+		}
+	}
+
+	is_mtth_scaled_to_size = yes
+
+	mean_time_to_happen = {
+		months = 10
+
+		modifier = {
+			factor = 0.625
+			owner = { stability = 3 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				stability = 2
+				NOT = { stability = 3 }
+			}
+		}
+		modifier = {
+			factor = 0.875
+			owner = {
+				stability = 1
+				NOT = { stability = 2 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				NOT = { stability = 0 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			is_year = 1700
+		}
+	}
+
+	option = {
+		name = MEE_Byzantine_Events.67.a
+		ai_chance = { factor = 5 }
+
+		change_culture = owner
 	}
 }

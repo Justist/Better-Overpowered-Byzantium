@@ -210,6 +210,12 @@ estate_burghers =
 		}
 	}
 	custom_name = {
+		desc = estate_emporoi
+		trigger = {
+			tag = ROM
+		}
+	}
+	custom_name = {
 		desc = estate_quartersmasters
 		trigger = {
 			has_government_attribute = is_pirate_republic_reform

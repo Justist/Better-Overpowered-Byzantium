@@ -9,18 +9,36 @@ byz_armada =
     }
 
     country_modifier = {
-        own_coast_naval_combat_bonus = 2.0
-        treasure_fleet_income = 0.5
+        navy_tradition = 2.0
+		navy_tradition_decay = -0.01
+		naval_morale = 0.20
+		recover_navy_morale_speed = 1.0
+
+		max_flagships = 4
+
+		treasure_fleet_income = 0.50
+		global_ship_trade_power = 0.50
+
         siege_blockade_progress = 1
-        global_naval_barrage_cost = -0.4
-        capture_ship_chance = 0.5
-        global_ship_trade_power = 0.5
+        global_naval_barrage_cost = -0.40
+
+		global_ship_recruit_speed = -0.50
         allowed_marine_fraction = 1.0
 		movement_speed_in_fleet_modifier = 2
-		transport_attrition = -1
-		regiment_disembark_speed = 1.5
-		max_flagships = 9
+		transport_attrition = -1.0
+		movement_speed_onto_off_boat_modifier = 1.0
+
+		number_of_cannons_modifier = 0.5
+		heavy_ship_hull_size_modifier = 0.5
+		global_ship_repair = 1.0
 		sea_repair = yes
+
+		own_coast_naval_combat_bonus = 2.0
+		naval_morale_damage = 0.2
+		leader_naval_fire = 3
+		leader_naval_shock = 3
+		leader_naval_manuever = 3
+		disengagement_chance = 0.50
     }
 
     button_gfx = 28

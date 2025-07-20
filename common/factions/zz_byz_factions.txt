@@ -15,6 +15,7 @@ byz_faction_clarissimi = {
 		colony_cost_modifier = -0.75
 		global_colonial_growth = 250
 		native_uprising_chance = -2.0
+		colony_development_boost = 4
 	}
 }
 
@@ -30,6 +31,7 @@ byz_faction_spectabiles = {
 		advisor_cost = -0.8
 		improve_relation_modifier = 1.0
 		accept_vassalization_reasons = 100
+		num_of_pronoiars = 2
 	}
 }
 

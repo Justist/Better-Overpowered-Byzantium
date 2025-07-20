@@ -1,0 +1,11 @@
+pronoia_religious_drive = {
+	missionaries = 3
+	global_missionary_strength = 0.10
+	missionary_maintenance_cost = -0.90
+	religious_unity = 0.5
+}
+
+subject_supply_support = {
+        global_supply_limit_modifier = 2.0
+        local_friendly_movement_speed = 0.5
+}

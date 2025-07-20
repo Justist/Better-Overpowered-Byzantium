@@ -30,6 +30,9 @@ strategikon_modifier = {
 	siege_ability = 0.7
 	army_tradition = 2.0
 	reinforce_speed = 1.0
+	global_supply_limit_modifier = 2.0
+	local_friendly_movement_speed = 0.5
+	backrow_artillery_damage = 1.0
 }
 
 growth_of_the_orthodox_church = {
@@ -135,4 +138,37 @@ council_of_the_armada_mod = {
 	max_admiral_shock = 2
 	max_admiral_maneuver = 2
 	max_admiral_siege = 2
+}
+
+BYZ_liquid_fire = {
+	galley_power = 0.5
+	can_transport_units = yes
+	is_galleass_modifier = yes
+}
+
+BYZ_naval_renaissance = {
+	light_ship_power = 0.5
+	has_voc_indiamen = yes
+	allowed_voc_indiamen_fraction = 0.2
+}
+
+BYZ_stronger_indiamen = {
+	number_of_cannons_modifier = 0.2
+	ship_trade_power_modifier = 0.5
+	hull_size_modifier = 0.2
+	is_voc_indiamen_modifier = yes
+}
+
+BYZ_local_man_of_war = {
+	local_has_man_of_war = yes
+}
+
+BYZ_varangian_regiments  = {
+	has_tercio = yes
+	amount_of_tercio = 25
+}
+
+BYZ_local_varangian_regiments = {
+	local_has_tercio = yes
+	local_garrison_size = 1.0
 }

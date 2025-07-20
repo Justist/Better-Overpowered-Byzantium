@@ -522,6 +522,19 @@ MEE_BYZ_conquest_2 = {
 					add_mil_power = 100
 				"
 			}
+
+			unlock_issue = {
+				issue = colonial_venture_act
+			}
+			unlock_issue = {
+				issue = the_sugar_act
+			}
+			unlock_issue = {
+				issue = the_gold_act
+			}
+			unlock_issue = {
+				issue = the_spice_act
+			}
 		}
 	}
 }
@@ -1610,7 +1623,7 @@ MEE_BYZ_conquest_5 = {
 				type = byz_permanent_power_projection
 				amount = 5
 			}
-			
+
 			country_event_with_insight = {
 				id = MEE_Byzantine_Events.61
 				insight_tooltip = BYZ_enable_buff_cossack_land_grants
@@ -3537,8 +3550,24 @@ MEE_BYZ_military_3 = {
 				duration = -1
 			}
 			add_country_modifier = {
-				name = ITA_galleass_transport
+				name = BYZ_naval_renaissance
 				duration = -1
+			}
+			add_country_modifier = {
+				name = BYZ_stronger_indiamen
+				duration = -1
+			}
+			custom_tooltip = BYZ_local_man_of_war_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_port = yes
+					}
+					add_province_modifier = {
+						name = BYZ_local_man_of_war
+				duration = -1
+			}
+				}
 			}
 
 			complex_dynamic_effect = {
@@ -3791,8 +3820,7 @@ MEE_BYZ_military_centralized_4 = {
 		icon = mission_the_varangians
 		required_missions = { BYZ_theme_system }
 		position = 15
-		provinces_to_highlight = {
-		}
+
 		trigger = {
 			not_in_mission_preview_mode = { key = BYZ }
 			army_tradition = 60
@@ -3802,9 +3830,22 @@ MEE_BYZ_military_centralized_4 = {
 			}
 		}
 		effect = {
-			custom_tooltip = BYZ_enable_the_varangian_guard_mercenary_company #handled by mission_completed
+			custom_tooltip = BYZ_local_varangian_regiments_tt
+			hidden_effect = {
+				151 = {
+					add_province_modifier = {
+						name = BYZ_local_varangian_regiments
+						duration = -1
+					}
+				}
+			}
 
 			custom_tooltip = " "
+
+			add_country_modifier = {
+				name = BYZ_varangian_regiments
+				duration = -1
+			}
 
 			add_country_modifier = {
 				name = BYZ_elite_forces

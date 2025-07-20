@@ -21,14 +21,19 @@ byzantine_mechanic = {
 		royal_council_interaction = {
 			icon = GFX_system_of_councils_adm_button
 			cost_type = council_consensus
-			cost = 50
-			trigger = { 
+			cost = 25
+			trigger = {
                 NOT = { has_country_modifier = royal_council_meeting_mod }
+				OR = {
+					NOT = { has_country_modifier = council_of_the_chamber_mod }
+					NOT = { has_country_modifier = council_of_finance_mod }
+					NOT = { has_country_modifier = council_of_the_inquisition_mod }
+				}
             }
 			effect = {
 				add_country_modifier = {
 					name = royal_council_meeting_mod
-					duration = 3650
+					duration = 1825
 				}
 				country_event = {
 					id = hispanic_monarchy_events.1
@@ -42,14 +47,19 @@ byzantine_mechanic = {
 		state_council_interaction = {
 			icon = GFX_system_of_councils_dip_button
 			cost_type = council_consensus
-			cost = 50
+			cost = 25
 			trigger = {
                 NOT = { has_country_modifier = state_council_meeting_mod }
+				OR = {
+					NOT = { has_country_modifier = council_of_europe_mod }
+					NOT = { has_country_modifier = council_of_mediterranean_mod }
+					NOT = { has_country_modifier = council_of_the_indies_mod }
+				}
             }
 			effect = {
 				add_country_modifier = {
 					name = state_council_meeting_mod
-					duration = 3650
+					duration = 1825
 				}
 				country_event = {
 					id = hispanic_monarchy_events.2
@@ -63,14 +73,19 @@ byzantine_mechanic = {
 		war_council_interaction = {
 			icon = GFX_system_of_councils_mil_button
 			cost_type = council_consensus
-			cost = 50
+			cost = 25
 			trigger = {
                 NOT = { has_country_modifier = war_council_meeting_mod }
+				OR = {
+					NOT = { has_country_modifier = council_of_the_crusade_mod }
+					NOT = { has_country_modifier = council_of_military_orders_mod }
+					NOT = { has_country_modifier = council_of_the_armada_mod }
+				}
             }
 			effect = {
 				add_country_modifier = {
 					name = war_council_meeting_mod
-					duration = 3650
+					duration = 1825
 				}
 				country_event = {
 					id = hispanic_monarchy_events.3

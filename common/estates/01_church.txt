@@ -197,6 +197,12 @@ estate_church =
 		}
 	}
 	custom_name = {
+		desc = estate_klirikoi
+		trigger = {
+			tag = ROM
+		}
+	}
+	custom_name = {
 		desc = estate_ogboni
 		trigger = {
 			tag = OYO
