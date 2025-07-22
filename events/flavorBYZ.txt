@@ -3946,7 +3946,7 @@ country_event = {
 		if = {
             limit = { NOT = { has_country_flag = BYZ_pronoia_religious_drive } }
             set_country_flag = BYZ_pronoia_religious_drive
-			fire_country_event = { id = MEE_Byzantine_Events.64 days = 1 }
+			country_event = { id = MEE_Byzantine_Events.64 days = 1 }
         }
 	}
 	mean_time_to_happen = {
@@ -4129,7 +4129,7 @@ province_event = {
 		}
 	}
 
-	is_mtth_scaled_to_size = yes
+	is_mtth_scaled_to_size = 1
 
 	mean_time_to_happen = {
 		months = 10

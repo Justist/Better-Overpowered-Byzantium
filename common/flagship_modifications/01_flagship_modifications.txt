@@ -1,5 +1,4 @@
 byzantine_flagship = {
-	icon = GFX_flagship_byzantine_flagship
 	trigger = {
 		OR = {
 			tag = BYZ
