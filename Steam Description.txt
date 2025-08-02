@@ -1,25 +1,45 @@
-A new version of the mod [] by [].
+A new version of the mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1703626536]Overpowered Byzantium[/url].
 
 This makes it compatible with the current game, as well as fixing/changing some issues the mod had.
 
-What is fixed:
-- Alert Icons are now the proper icons instead of clearly broken
-- Parliament bribes are working and at all times op again
-- Culture conversion should no longer convert to No Culture
-- Byzantine Government mechanic should now buff all army units
-- Byzantium can now establish pronoiars, allowing some of the missions to be completed
-- All estate privileges are available again, including the debuffs Byzantium usually starts with, if you so wish
-- Naval doctrine is added first rather than last, so you can actually click it even if there are more than 5 doctrines available
-- Some typo's and minus signs which made things not work or the wrong way
+Big thanks to Summary for a lot of the changes and new icons!
 
-What is changed:
-- The mission tree is much larger; the old and new tree are basically mashed into one
-- Slightly improved the heir event, 4/2/2 -> 6/3/3
-- Holy Orders in states now provide state maintenance reduction instead of patriarch authority
-- Added some more flagship modifiers
-- Added all the new government forms the game has nowadays (not really too relevant for Byzantium, but might have other countries break less)
-- Updated a bunch of stuff with the new game file code, not sure how much of that impacts a Byzantium game though
+What is changed compared to the original mod (in no particular order):
+- Alert icons fixed
+- Parliament bribes fixed
+- Culture conversion fixed
+- New Byzantium government mechanic
+- Renamed both instances of pronoiars, subjects and units, to respectively despotates and akritai
+- Depotates (subject pronoiars) can now be landed in the diplomacy screen
+- Estate privileges are fixed and updated
+- Byzantine naval doctrine is first choice, rather than last, so it is clickable
+- Lots of modification additions and changes
+- Mission tree is much larger and some missions are expanded
+- Heir event is improved (more op)
+- Holy orders in states are buffed, now the first one feels the best just in most cases instead of always
+- More flagship modifiers
+- All mod files (should) now properly work together with the latest patch (1.37.5.0)
+- Roman Empire now properly gets all the buffs and mechanics Byzantium has
+- Cossacks are available as an estate from the start, and have their own buff
+- Lots of localisation added and changed to make it feel more immersive
+- A lot of beautiful new icons, made by Summary
+- Small changes to reforms
+- New Great Project in Constantinople (hidden behind a mission)
+- Decision to add all provinces as seats in parliament
+- Propagate religion is fixed
+- Lots of localisation added and improved
 
-What is (still) not working:
-- The mission tree will very likely not work if you do not have the DLCs Purple Phoenix and King of Kings
-- Apparently there were plans to add factions to the senate, that has not been implemented by me.
+In addition the mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3270921653]Modifiers sorting and coloring[/url] has been integrated in this mod.
+We did not get a response from the author after reaching out, but as they have permitted integrations in the past we are assuming it is fine.
+For the author of MSAC: if not, please let us know!
+
+Word of warning:
+This mod has been made with the assumption the player has all DLC. If you do not, not all parts of the mod may be working properly.
+At least for the missions you need the King of Kings DLC, and a lot of other mechanics are also not playable without their respective DLCs.
+
+Future plans:
+- Factions currently have no interaction through gameplay, would love to see that having a role
+- Encouraging the player to play with despotates
+- Reworking the mission tree so it makes sense / is not doubled
+- Reworking the mission tree so players without King of Kings get at least a basic byzantine tree
+- Find a way to prevent clicking and scrolling 300 times per parliament decision. Maybe cap it at a lower amount in some way
