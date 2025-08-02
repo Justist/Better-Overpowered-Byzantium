@@ -18,19 +18,19 @@ gme_great_palace_constantinople = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		OR ={
-			owner = { 
+		OR = {
+			owner = {
 				tag = BYZ
-				was_tag = BYZ 
+				was_tag = BYZ
 			}
 		BYZ = { mission_completed = BYZ_greece }
 		}
 	}
 	can_upgrade_trigger = {
-		OR ={
-			owner = { 
+		OR = {
+			owner = {
 				tag = BYZ
-				was_tag = BYZ 
+				was_tag = BYZ
 			}
 		BYZ = { mission_completed = BYZ_greece }
 		}
@@ -74,7 +74,7 @@ gme_great_palace_constantinople = {
 		region_modifier = { }
 		country_modifiers = {
 			administrative_efficiency = 0.05
-			governing_cost = -0.15 
+			governing_cost = -0.15
 			stability_cost_modifier = -0.10
 		}
 		on_upgraded = { }
@@ -93,7 +93,7 @@ gme_great_palace_constantinople = {
 		region_modifier = { }
 		country_modifiers = {
 			administrative_efficiency = 0.10
-			governing_cost = -0.25 
+			governing_cost = -0.25
 			stability_cost_modifier = -0.15
 		}
 		on_upgraded = { }

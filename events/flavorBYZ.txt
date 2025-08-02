@@ -4177,6 +4177,10 @@ country_event = {
 
 	hidden = yes
 
+    immediate = {
+        set_country_flag = BYZ_great_palace_of_constantinople
+    }
+
 	option = {
 		name = MEE_Byzantine_Events.68.a
 
@@ -4188,7 +4192,6 @@ country_event = {
 			}
 		}
 	}
-	set_country_flag = BYZ_great_palace_of_constantinople
 }
 
 country_event = {
@@ -4207,16 +4210,18 @@ country_event = {
 			factor = 1
 		}
 		151 = {
-			limit = {
-				has_dlc = "Leviathan"
-				has_great_project = {
-					type = gme_great_palace_constantinople
-					tier = 0
-				}
-			}
-			set_great_project_tier_1 = {
-				type = gme_great_palace_constantinople
-			}
+            if = {
+                limit = {
+                    has_dlc = "Leviathan"
+                    has_great_project = {
+                        type = gme_great_palace_constantinople
+                        tier = 0
+                    }
+                }
+                set_great_project_tier_1 = {
+                    type = gme_great_palace_constantinople
+                }
+            }
 		}
 		destroy_great_project = {
 			type = sultan_ahmed_mosque

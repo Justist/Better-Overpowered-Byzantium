@@ -1,5 +1,4 @@
-byz_armada =
-{
+byz_armada = {
     can_select = {
         is_primitive = no
         OR = {

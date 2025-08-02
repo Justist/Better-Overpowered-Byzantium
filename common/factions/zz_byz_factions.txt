@@ -6,8 +6,7 @@ byz_faction_clarissimi = {
 	monarch_power = ADM
 	always = yes
 
-	modifier =
-	{
+	modifier = {
 		may_explore = yes
 		colonists = 3
 		range = 1.0
@@ -22,8 +21,7 @@ byz_faction_spectabiles = {
 	monarch_power = DIP
 	always = yes
 
-	modifier =
-	{
+	modifier = {
 		diplomats = 3
 		monthly_favor_modifier = 2.0
 		diplomatic_reputation = 2
