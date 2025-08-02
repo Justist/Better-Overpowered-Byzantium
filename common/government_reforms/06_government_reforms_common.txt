@@ -18,14 +18,14 @@ united_cantons_reform = {
 	}
 	ai = {
 		factor = 10 #unique
-		
+
 		modifier = {
 			factor = 2
 			NOT = {
 				num_of_cities = 11
 			}
 		}
-		
+
 		modifier = {
 			factor = 0
 			is_subject = yes
@@ -49,12 +49,12 @@ parliamentary_reform = {
 		NOT = { #has a special "senate" themed reform
 			OR = {
 				tag = BYZ
-				was_tag = BYZ 
+				was_tag = BYZ
 			}
 		}
 	}
-	
-	trigger = {		
+
+	trigger = {
 		if = {
 			limit = {
 				OR = {
@@ -68,7 +68,7 @@ parliamentary_reform = {
 				has_reform = parliamentary_reform
 			}
 			is_not_blocked_by_estate_privilege = { estate = estate_nobles }
-		}	
+		}
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_great_sejm }
 		NOT = { has_reform = polish_elective_monarchy }
@@ -136,10 +136,10 @@ restoration_of_the_senate_reform = {
 		NOT = { has_government_attribute = english_parliament }
 		OR = {
 			tag = BYZ
-			was_tag = BYZ 
+			was_tag = BYZ
 		}
 	}
-	
+
 	trigger = {
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_great_sejm }
@@ -214,7 +214,7 @@ permanent_marathas_council_reform = {
 			estate_influence = {
 				estate = estate_maratha
 				influence = 90
-			}			
+			}
 		}
 	}
 }
@@ -267,7 +267,7 @@ governmental_purbias_register_reform = {
 			estate_influence = {
 				estate = estate_rajput
 				influence = 90
-			}			
+			}
 		}
 	}
 }
@@ -429,7 +429,7 @@ vodka_of_the_crown_reform = {
 					limit = {
 						trade_goods = grain
 					}
-					add_province_modifier = { 
+					add_province_modifier = {
 						name = grain_vodka_bonus_prod
 						duration = -1
 						hidden = yes
@@ -470,8 +470,8 @@ governing_senate_reform = {
 			has_reform = ruthenian_tsardom
 		}
 	}
-	
-	trigger = {	
+
+	trigger = {
 		if = {
 			limit = { has_dlc = "Res Publica" }
 			NOT = { has_reform = elective_monarchy }
@@ -629,7 +629,7 @@ papal_embassy_reform = {
 	custom_attributes = {
 		improved_opinion_of_pope = yes	#Popesman has +25 opinion of you
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -669,7 +669,7 @@ i_am_the_church_reform = {
 	custom_attributes = {
 		improved_defender_of_faith = yes	#Being Defender of Faith increases Dip Rep, Tolerance and Morale
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -695,7 +695,7 @@ focus_of_the_patriarchy_reform = {
 		active_holy_sites_improve_clergy_loyalty = yes
 		clerical_ministers_tech_buff = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -727,7 +727,7 @@ lands_for_the_monasteries_reform = {
 			selling_titles_increases_pa = yes
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -765,7 +765,7 @@ lands_for_the_monasteries_reform = {
 #	#		}
 #	#	}
 #	#}
-#	
+#
 #	ai = {
 #		factor = 1
 #	}
@@ -808,7 +808,7 @@ zoroastrian_focus_reform = {
 	#		}
 	#	}
 	#}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -837,7 +837,7 @@ power_to_the_synagogoues_reform = {
 			loyalty_from_celebration = yes	#Celebrating will now give +20 Loyalty
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -880,7 +880,7 @@ head_of_the_reformed_church_reform = {
 	custom_attributes = {
 		improved_defender_of_faith = yes	#Being Defender of Faith increases Dip Rep, Tolerance and Morale
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -909,7 +909,7 @@ confucian_governing_reform = {
 			full_loyalty_on_harmonization = yes	#Add +100 Loyalty when harmonizing something
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -945,7 +945,7 @@ empower_buddhist_temples_reform = {
 			enable_karma_decision = yes	#Allows decision every 20 years to add or remove 10 Karma
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -975,7 +975,7 @@ public_hindu_practices_reform = {
 			reduce_new_deity_decision_cd = yes	#Reduce it by 15 years
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1002,7 +1002,7 @@ strengthen_shaman_privileges_reform = {
 			no_influence_from_fetishist_privileges = yes
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1026,7 +1026,7 @@ abolished_caste_system_reform = {
 	custom_attributes = {
 		seizing_land_no_rebels = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1056,7 +1056,7 @@ strengthen_the_ulema_reform = {
 			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180°
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1086,7 +1086,7 @@ strengthen_the_dhimmi_reform = {
 		disables_estate_brahmins = yes
 		enables_estate_dhimmi = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1111,7 +1111,7 @@ legacy_of_the_steppes_reform = {
 	custom_attributes = {
 		winning_battles_increases_legitimacy = yes	#Every single won battle adds +2 Legitimacy and +0.25 Absolutism
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1135,7 +1135,7 @@ state_and_shrines_intertwined_reform = {
 	custom_attributes = {
 		enables_divine_idea_group = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1161,7 +1161,7 @@ embedded_norse_government_reform = {
 	custom_attributes = {
 		winning_war_increases_legitimacy = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1183,7 +1183,7 @@ strengthen_clergy_reform = {
 		church_loyalty_modifier = 0.1
 		war_exhaustion = -0.03
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1207,7 +1207,7 @@ curtail_clergy_power_reform = {
 	custom_attributes = {
 		seizing_land_no_rebels_from_estate_church = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1252,7 +1252,7 @@ secure_clergy_power_reform = {
 	custom_attributes = {
 		temples_modifier = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1272,7 +1272,7 @@ maintain_clergy_balance_of_power_reform = {
 		all_estate_loyalty_equilibrium = 0.05
 		diplomats = 1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1307,7 +1307,7 @@ separate_clergy_from_state_affairs_reform = {
 		disables_estate_church = yes
 		disables_estate_brahmins = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1338,7 +1338,7 @@ cult_of_reason_reform = {
 		possible_policy = 1
 		free_policy = 1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1364,7 +1364,7 @@ conserve_the_religion_reform = {
 			remove_country_modifier = cult_of_reason
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1391,7 +1391,7 @@ secularization_of_the_state_reform = {
 		rr_girondists_influence = 0.1
 		no_religion_penalty = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1585,7 +1585,7 @@ fiqh_laws_reform = {
 		same_religion_subject_bonus = yes
 		allow_piety_switch_decision = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1611,7 +1611,7 @@ sufism_decree_reform = {
 		diplomats = 1
 		dhimmi_loyalty_modifier = 0.1
 	}
-	
+
 	conditional = {
 		allow = { has_dlc = "Golden Century" }
 		custom_attributes = {
@@ -1625,7 +1625,7 @@ sufism_decree_reform = {
 			free_guarantee_dhimmi_autonomy = yes
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1653,7 +1653,7 @@ anglican_state_church_reform = {
 		monthly_fervor_increase = 0.1
 		max_absolutism = 10
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1673,7 +1673,7 @@ english_conciliarism_reform = {
 		tolerance_heretic = 3
 		diplomatic_reputation = 1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1739,7 +1739,7 @@ organized_military_staff_reform = {
 		reinforce_speed = 0.25
 		global_supply_limit_modifier = 0.2
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1761,7 +1761,7 @@ military_engineering_reform = {
 		artillery_barrage_cost = -0.25
 		artillery_cost = -0.1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1793,7 +1793,7 @@ defensive_stance_reform = {
 		garrison_size = 0.2
 		max_hostile_attrition = 1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1816,7 +1816,7 @@ sustained_discipline_reform = {
 		drill_decay_modifier = -0.33
 		drill_gain_modifier = 0.33
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1841,7 +1841,7 @@ cavalry_warfare_reform = {
 		cav_to_inf_ratio = 0.1
 		cavalry_cost = -0.1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1853,7 +1853,7 @@ amphibious_specialization_reform = {
 	potential = {
 		OR = {
 			NOT = { has_dlc = "Domination" }
-			AND = { 
+			AND = {
 				NOT = { primary_culture = english }
 				NOT = { primary_culture = anglois }
 			}
@@ -1901,7 +1901,7 @@ amphibious_specialization_reform = {
 			marine_buff = yes	#Marines -20% Manpower Usage
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 		modifier = {
@@ -1934,7 +1934,7 @@ mercenary_leadership_reform = {
 		mercenary_cost = -0.1
 		possible_condottieri = 0.5
 	}
-	
+
 	ai = {
 		factor = 1
 		modifier = {
@@ -1980,7 +1980,7 @@ doppelsoldner_reform = {
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -2009,7 +2009,7 @@ maritime_military_reform = {
 		naval_morale = 0.1
 		global_ship_cost = -0.05
 	}
-	
+
 	ai = {
 		factor = 1
 		modifier = {
@@ -2061,7 +2061,7 @@ expanded_devshirme_system_reform = {
 	removed_effect = {
 		remove_country_modifier = tur_devshirme_recruitment
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2092,7 +2092,7 @@ reformed_ottoman_conscription_reform = {
 		regiment_recruit_speed = 0.25
 		reinforce_speed = 0.25
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2141,7 +2141,7 @@ mansure_army_reform = {
 		disables_estate_janissaries = yes
 		has_janissaries = no
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2193,7 +2193,7 @@ janissary_military_reform = {
 		has_janissaries = yes
 		can_revoke_janissary_privileges = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2223,7 +2223,7 @@ wei_suo_system_reform = {
 		global_regiment_cost = -0.15
 	}
 	custom_attributes = {
-		improved_military_buildings = yes	#Barracks, Regimental Camps and Soldier Househols are buffed 
+		improved_military_buildings = yes	#Barracks, Regimental Camps and Soldier Househols are buffed
 	}
 	effect = {
 		hidden_effect = {
@@ -2286,7 +2286,7 @@ wei_suo_system_reform = {
 			}
 		}
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2334,7 +2334,7 @@ eight_banners_reform = {
 			remove_country_modifier = eight_banners_reform_modifier
 		}
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2365,7 +2365,7 @@ green_standard_army_reform = {
 	custom_attributes = {
 		manpower_from_defeating_armies = yes		#10% of the defeated troops join the Green Standard Army
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2392,7 +2392,7 @@ ashigaru_reform = {
 		army_tradition_from_battle = 0.5
 		infantry_cost = -0.1
 	}
-	
+
 	ai = {
 		factor = 500
 	}
@@ -2418,7 +2418,7 @@ early_bushido_code_reform = {
 		allowed_samurai_fraction = 0.1
 		army_tradition_decay = -0.01
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2451,7 +2451,7 @@ the_righteous_army_reform = {
 	custom_attributes = {
 		has_righteous_army = yes	#Can enact the righteous army
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2482,7 +2482,7 @@ merchant_arsenal_reform = {
 		global_ship_recruit_speed = -0.25
 		has_galleass = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2550,11 +2550,11 @@ rajput_military_leadership_reform = {
 		rajput_privilege_slots = 1
 		allowed_rajput_fraction = 0.1
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
-} 
+}
 
 #Marathas
 the_maratha_army_reform = {
@@ -2580,7 +2580,7 @@ the_maratha_army_reform = {
 	custom_attributes = {
 		seizing_land_no_rebels_from_estate_maratha = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2611,7 +2611,7 @@ subutais_strategies_reform = {
 		leader_siege = 1
 		artillery_cost = -0.1
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2696,7 +2696,7 @@ ahmudan_system_reform = {
 	custom_attributes = {
 		ahmudan_system = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2725,7 +2725,7 @@ ghazi_reform = {
 		loot_amount = 0.5
 		available_province_loot = 0.5
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2791,7 +2791,7 @@ the_cawa_regiments_reform = {
 			}
 		}
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2827,7 +2827,7 @@ tercio_reform = {
 		army_tradition = 0.5
 		yearly_army_professionalism = 0.0025
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2884,13 +2884,13 @@ ordennancas_reform = {
 		}
 	}
 	modifiers = {
-		leader_land_shock = 1 
+		leader_land_shock = 1
 		army_tradition_decay = -0.005
 	}
 	custom_attributes = {
 		can_raise_manpower_from_home_region = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2925,7 +2925,7 @@ revive_the_almogavars_reform = {
 	custom_attributes = {
 		has_improved_almogavars = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2956,7 +2956,7 @@ volunteers_of_the_faith_reform = {
 	custom_attributes = {
 		can_rally_volunteers_from_allies = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -2987,7 +2987,7 @@ condottieri_contracts_reform = {
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3016,7 +3016,7 @@ compagnie_dordonnance_reform = {
 		cav_to_inf_ratio = 0.1
 		global_regiment_cost = -0.05
 	}
-	
+
 	ai = {
 		factor = 500
 		modifier = {
@@ -3031,7 +3031,7 @@ musketeers_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		tag = FRA 
+		tag = FRA
 	}
 	trigger = {
 		NOT = { current_age = age_of_discovery }
@@ -3050,7 +3050,7 @@ musketeers_reform = {
 		allowed_musketeer_fraction = 0.2
 		nobles_influence_modifier = -0.1
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3060,12 +3060,12 @@ gendarmes_reform = {
 	icon = "gendarmes_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "Domination" 
-		culture_group = french 
+		has_dlc = "Domination"
+		culture_group = french
 	}
 	trigger = {
 		OR = {
-			has_reform = gendarmes_reform 
+			has_reform = gendarmes_reform
 			custom_trigger_tooltip = {
 				tooltip = has_unlocked_this_reform_tt
 				has_country_flag = fra_unlock_gendarmes
@@ -3080,7 +3080,7 @@ gendarmes_reform = {
 		}
 	}
 	modifiers = {
-		cavalry_power = 0.1 
+		cavalry_power = 0.1
 		nobles_loyalty_modifier = 0.05
 		morale_damage = 0.05
 	}
@@ -3118,7 +3118,7 @@ general_war_commissariat_reform = {
 		monthly_prussian_militarized_society_2 = 0.1
 		monthly_prussian_militarized_society_3 = 0.125
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3156,7 +3156,7 @@ swiss_mercenary_reform = {
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3277,7 +3277,7 @@ royal_marines_reform = {
 			marine_buff = yes	#Marines -20% Manpower Usage
 		}
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3307,7 +3307,7 @@ professional_navy_reform = {
 		sailor_maintenance_modifer = -0.1
 		global_sailors_modifier = 0.25
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -3336,7 +3336,7 @@ manrent_reform = {
 		global_manpower_modifier = 0.1
 		vassal_forcelimit_bonus = 0.33
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3370,7 +3370,7 @@ staatse_leger_reform = {
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
 	}
-	
+
 	effect = {
 		if = {
 			limit = {
@@ -3382,7 +3382,7 @@ staatse_leger_reform = {
 			}
 		}
 	}
-	
+
 	removed_effect = {
 		if = {
 			limit = {
@@ -3391,7 +3391,7 @@ staatse_leger_reform = {
 			remove_country_modifier = ned_empowered_staatse_leger
 		}
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3422,7 +3422,7 @@ watergeuzen_reform = {
 		allowed_marine_fraction = 0.1
 		sea_repair = yes
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3496,10 +3496,10 @@ sygnakhs_system_reform = {
 		garrison_size = 0.2
 		max_hostile_attrition = 1
 		fort_maintenance_modifier = -0.25
-		hostile_attrition = 1 
+		hostile_attrition = 1
 		global_regiment_recruit_speed = -0.2
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3531,7 +3531,7 @@ cossacks_registry_reform = {
 		cossacks_influence_modifier = 0.1
 		cossacks_privilege_slots = 1
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3566,9 +3566,9 @@ lessons_of_the_hussite_wars_reform = {
 		}
 	}
 	modifiers = {
-		global_defender_dice_roll_bonus = 1 
+		global_defender_dice_roll_bonus = 1
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3603,7 +3603,7 @@ boyars_army_reform = {
 	custom_attributes = {
 		unlock_boyars_military_privileges = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -3658,7 +3658,7 @@ streltsy_reform = {
 			buffed_streltsy_button = yes
 		}
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3694,7 +3694,7 @@ new_order_regiments_reform = {
 			new_order_regiment_buff = yes
 		}
 	}
-	
+
 	ai = {
 		factor = 1000
 	}
@@ -3798,7 +3798,7 @@ new_world_exploitation_reform = {
 		}
 	}
 	modifiers = {
-		colonists = 1 
+		colonists = 1
 	}
 	custom_attributes = {
 		extra_trade_goods_for_colonial_subjects = yes
@@ -3882,9 +3882,9 @@ lockean_proviso_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 	}
 	trigger = {
-		OR = { 
+		OR = {
 			full_idea_group = economic_ideas
-			full_idea_group = infrastructure_ideas 
+			full_idea_group = infrastructure_ideas
 		}
 		if = {
 			limit = {
@@ -3984,7 +3984,7 @@ royal_charters_reform = {
 	}
 	modifiers = {
 		yearly_corruption = -0.1
-		global_unrest = -1 
+		global_unrest = -1
 		stability_cost_modifier = -0.15
 	}
 	conditional = {
@@ -4077,31 +4077,31 @@ jap_gokaido_reform = {
 		}
 	}
 	modifiers = {
-		merchants = 1 
+		merchants = 1
 	}
 	effect = {
 		every_owned_province = {
-			limit = { 
-				region = japan_region 
+			limit = {
+				region = japan_region
 				NOT = { has_province_modifier = jap_gokaido_modifier }
 			}
 			add_province_modifier = {
 				name = jap_gokaido_modifier
-				duration = -1 
+				duration = -1
 				hidden = yes
 			}
 		}
 	}
 	removed_effect = {
 		every_owned_province = {
-			limit = { 
-				region = japan_region 
+			limit = {
+				region = japan_region
 				has_province_modifier = jap_gokaido_modifier
-			}	
+			}
 			remove_province_modifier = jap_gokaido_modifier
 		}
 	}
-	custom_attributes = { benefits_for_japan = yes } 
+	custom_attributes = { benefits_for_japan = yes }
 	ai = {
 		factor = 100
 	}
@@ -4111,8 +4111,8 @@ reform_the_samurai_reform = {
 	icon = "reform_the_samurai_reform"
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = japanese_g 
-		tag = JAP 
+		culture_group = japanese_g
+		tag = JAP
 		OR = {
 			have_had_reform = reform_the_samurai_reform
 			has_reform = reform_the_samurai_reform
@@ -4130,8 +4130,8 @@ reform_the_samurai_reform = {
 		hidden_effect = {
 			add_country_modifier = {
 				name = jap_reformed_samurai_modifier
-				duration = -1 
-				hidden = yes 
+				duration = -1
+				hidden = yes
 			}
 		}
 	}
@@ -4147,13 +4147,13 @@ tercios_reform = {
 	icon = "tercios_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "Domination" 
+		has_dlc = "Domination"
 		OR = {
 			AND = {
 				is_or_was_tag = { tag = ARA }
 				OR = {
-					total_development = 500 
-					is_great_power = yes 
+					total_development = 500
+					is_great_power = yes
 				}
 			}
 			mission_completed = spa_tercios_system
@@ -4163,7 +4163,7 @@ tercios_reform = {
 			}
 			has_reform = tercios_reform
 		}
-		NOT = { religion_group = muslim } 
+		NOT = { religion_group = muslim }
 	}
 	modifiers = {
 		has_tercio = yes
@@ -4171,7 +4171,7 @@ tercios_reform = {
 		army_tradition = 0.5
 		yearly_army_professionalism = 0.0025
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -4181,26 +4181,26 @@ consulate_of_the_sea = {
 	icon = "consulate_of_the_sea"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "Domination" 
+		has_dlc = "Domination"
 		OR = {
 			tag = ARA
-			was_tag = ARA 
-			has_reform = consulate_of_the_sea 
+			was_tag = ARA
+			has_reform = consulate_of_the_sea
 		}
 	}
 	trigger = {
 		OR = {
 			mission_completed = gc_ara_consultate_of_the_sea2
-			has_reform = consulate_of_the_sea 
+			has_reform = consulate_of_the_sea
 		}
 	}
 	modifiers = {
 		trade_efficiency = 0.1
 		global_trade_power = 0.1
 		burghers_loyalty_modifier = 0.05
-		
+
 	}
-	
+
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -4208,7 +4208,7 @@ consulate_of_the_sea = {
 		}
 		can_use_trade_post = yes
 	}
-	
+
 	ai = {
 		factor = 10
 	}
@@ -4218,7 +4218,7 @@ restore_the_master_of_offices_reform = {
 	icon = "restore_the_master_of_offices_reform"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "King of Kings" 
+		has_dlc = "King of Kings"
 		OR = {
 			tag = BYZ
 			was_tag = BYZ
@@ -4229,13 +4229,14 @@ restore_the_master_of_offices_reform = {
 	modifiers = {
 		same_religion_advisor_cost = -0.15
 		advisor_pool = 1
+		free_policy = 2
 	}
-	
+
 	custom_attributes = {
 		enables_statesman_autonomy_reduction = yes
 		#perhaps adm or dip advisor recruitment here
 	}
-	
+
 	ai = {
 		factor = 10
 	}
@@ -4261,11 +4262,11 @@ chinampa_farms_reform = {
 	modifiers = {
 		global_trade_goods_size_modifier = 0.05
 	}
-	
+
 	custom_attributes = {
 		chinampa_farms_mechanic = yes
 	}
-	
+
 	effect = {
 		hidden_effect = {
 			every_owned_province = {
@@ -4312,7 +4313,7 @@ nakharar_title = {
 		nobles_influence_modifier = 0.05
 		nobles_loyalty_modifier = 0.1
 	}
-	
+
 	custom_attributes = {
 		seizing_land_no_rebels_from_estate_nobles = yes
 	}
@@ -4332,10 +4333,10 @@ sparapet_office = {
 		has_country_flag = arm_unlocked_sparapet
 	}
 	modifiers = {
-		leader_siege = 1 
+		leader_siege = 1
 		army_tradition = 0.5
 	}
-	
+
 	custom_attributes = {
 		recruiting_general_gives_army_tradition = yes
 	}
@@ -4355,7 +4356,7 @@ turkoman_ottoman_institutions = {
 		governing_capacity = 100
 	}
 	conditional = {
-		allow = { 
+		allow = {
 			has_dlc = "Cradle of Civilization"
 		}
 		has_pashas = yes
@@ -4374,7 +4375,7 @@ turkoman_ottoman_institutions = {
 
 #Court Ideas
 superiority_of_the_state_reform = {
-	icon = russian_queen	
+	icon = russian_queen
 	potential = {
 		NOT = { has_unlocked_government_reform = { government_reform = divided_aristocracy_reform } }
 	}
@@ -4427,7 +4428,7 @@ modernized_furusiyya_reform = {
 			have_had_reform = modernized_furusiyya_reform
 			has_unlocked_government_reform = { government_reform = modernized_furusiyya_reform }
 		}
-		
+
 	}
 	modifiers = {
 		allowed_mamluks_fraction = 0.05
@@ -4442,8 +4443,8 @@ modernized_furusiyya_reform = {
 		hidden_effect = {
 			add_country_modifier = {
 				name = mam_disc_troops_modifier
-				duration = -1 
-				hidden = yes 
+				duration = -1
+				hidden = yes
 			}
 		}
 	}
@@ -4455,7 +4456,7 @@ modernized_furusiyya_reform = {
 	custom_attributes = {
 		advisors_generate_innovativeness = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -4470,7 +4471,7 @@ karimi_stations_reform = {
 			have_had_reform = karimi_stations_reform
 			has_unlocked_government_reform = { government_reform = karimi_stations_reform }
 		}
-		
+
 	}
 	modifiers = {
 		trade_steering = 0.2
@@ -4484,7 +4485,7 @@ karimi_stations_reform = {
 		}
 		can_use_trade_post = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -4496,13 +4497,13 @@ diwan_al_khass_reform = {
 	potential = {
 		has_dlc = "King of Kings"
 		is_or_was_tag = { tag = MAM }
-		
+
 	}
 	modifiers = {
 		development_cost = -0.05
 		build_cost = -0.1
 	}
-	
+
 	ai = {
 		factor = 10
 	}
@@ -4529,7 +4530,7 @@ state_madrasas_reform = {
 			advisors_generate_innovativeness = yes
 		}
 	}
-	
+
 	ai = {
 		factor = 10
 	}
@@ -4551,7 +4552,7 @@ integrated_ottoman_officials = {
 	}
 
 	conditional = {
-		allow = { 
+		allow = {
 			has_dlc = "Cradle of Civilization"
 		}
 		has_pashas = yes
@@ -4579,13 +4580,13 @@ russian_mercenary_guard_reform = {
 		hidden_effect = {
 			add_country_modifier = {
 				name = feo_elite_russian_guard
-				duration = -1 
-				hidden = yes 
+				duration = -1
+				hidden = yes
 			}
 		}
 	}
 	removed_effect = {
-		remove_country_modifier = feo_elite_russian_guard 
+		remove_country_modifier = feo_elite_russian_guard
 	}
 
 	ai = {
@@ -4701,7 +4702,7 @@ german_cultural_disunity_reform = {
 	government_abilities = {
 		cultural_unity_mechanic
 	}
-	
+
 	removed_effect = {
 		clr_country_flag = GER_stuck_disunited
 		hidden_effect = {
@@ -4718,7 +4719,7 @@ german_cultural_disunity_reform = {
 			remove_country_modifier = GER_prussian_modifier
 		}
 	}
-		
+
 	ai = {
 		factor = 1
 	}
@@ -4736,7 +4737,7 @@ german_franconian_reform = {
 		idea_cost = -0.1
 		same_culture_advisor_cost = -0.1
 	}
-	
+
 	effect = {
 		hidden_effect = {
 			custom_tooltip = GER_paper_provinces
@@ -4752,7 +4753,7 @@ german_franconian_reform = {
 				limit = {
 					trade_goods = paper
 				}
-				add_province_modifier = { 
+				add_province_modifier = {
 					name = GER_paper_provinces_franconian
 					duration = -1
 				}
@@ -4769,7 +4770,7 @@ german_franconian_reform = {
 			}
 		}
 	}
-	
+
 	custom_attributes = {
 		GER_buff_paper_provinces = yes
 	}
@@ -4789,7 +4790,7 @@ german_saxon_reform = {
 	modifiers = {
 		production_efficiency = 0.1
 	}
-	
+
 	effect = {
 		hidden_effect = {
 			custom_tooltip = GER_mining_provinces
@@ -4809,7 +4810,7 @@ german_saxon_reform = {
 						trade_goods = copper
 					}
 				}
-				add_province_modifier = { 
+				add_province_modifier = {
 					name = GER_mining_provinces_saxon
 					duration = -1
 				}
@@ -4826,7 +4827,7 @@ german_saxon_reform = {
 			}
 		}
 	}
-	
+
 	custom_attributes = {
 		GER_buff_mining_provinces = yes
 	}
@@ -4853,7 +4854,7 @@ german_lower_saxon_reform = {
 		}
 		can_use_trade_post = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -4868,14 +4869,14 @@ german_rhenish_reform = {
 		}
 	}
 	modifiers = {
-		ae_impact = -0.15 
+		ae_impact = -0.15
 		diplomats = 1
 	}
-	
+
 	custom_attributes = {
 		GER_buff_diplomat_advisor_for_rhenish = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -4892,11 +4893,11 @@ german_austrian_reform = {
 	modifiers = {
 		chance_to_inherit = 0.25
 	}
-	
+
 	custom_attributes = {
 		GER_unlock_integrated_vassal = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -4914,7 +4915,7 @@ german_bavarian_reform = {
 		monthly_splendor = 2
 		prestige = 1
 	}
-	
+
 	conditional = {
 		allow = {
 			has_dlc = "Mandate of Heaven"
@@ -4923,7 +4924,7 @@ german_bavarian_reform = {
 			GER_taking_age_rewards_gives_stability = yes
 		}
 	}
-	
+
 	conditional = {
 		allow = {
 			NOT = { has_dlc = "Mandate of Heaven" }
@@ -4932,7 +4933,7 @@ german_bavarian_reform = {
 			diet_increases_not_influence = yes
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -4953,7 +4954,7 @@ german_prussian_reform = {
 		monthly_prussian_militarized_society_3 = 0.1
 		land_maintenance_modifier = -0.05
 	}
-	
+
 	conditional = {
 		allow = {
 			OR = {
@@ -4978,7 +4979,7 @@ german_prussian_reform = {
 			free_noble_levies = yes
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -4995,7 +4996,7 @@ german_swiss_reform = {
 	modifiers = {
 		mercenary_manpower = 0.25
 	}
-	
+
 	conditional = {
 		allow = { has_dlc = "Domination" }
 		government_abilities = {
@@ -5008,7 +5009,7 @@ german_swiss_reform = {
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -5026,7 +5027,7 @@ german_swabian_reform = {
 		inflation_reduction = 0.1
 		development_cost_in_primary_culture = -0.1
 	}
-	
+
 	conditional = {
 		allow = { has_dlc = "Domination" }
 		custom_attributes = {
@@ -5041,7 +5042,7 @@ german_swabian_reform = {
 			no_mercantilism_loss_from_privilege = yes
 		}
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -5061,11 +5062,11 @@ german_westphalian_reform = {
 		monthly_fervor_increase = 1
 		global_missionary_strength = 0.02
 	}
-	
+
 	custom_attributes = {
 		GER_upgrade_religious_state = yes
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -5082,7 +5083,7 @@ german_other_reform = {
 	modifiers = {
 		governing_capacity_modifier = 0.15
 	}
-} 
+}
 
 merchant_representation_reform = {
 	icon = "merchant_representation_reform"
@@ -5135,7 +5136,7 @@ integrated_ottoman_officials = {
 	}
 
 	conditional = {
-		allow = { 
+		allow = {
 			has_dlc = "Cradle of Civilization"
 		}
 		has_pashas = yes
@@ -5302,8 +5303,8 @@ apostolic_kingdom = {
 	}
 
 	conditional = {
-		allow = { 
-			has_dlc = "Winds of Change" 
+		allow = {
+			has_dlc = "Winds of Change"
 			has_dlc = "Golden Century"
 		}
 		custom_attributes = {
@@ -5339,7 +5340,7 @@ cuman_lancers_reform = {
 		cav_to_inf_ratio = 0.25
 		cavalry_cost = -0.2
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -5363,7 +5364,7 @@ continue_the_renaissance_reform = {
 		embracement_cost = -0.1
 		global_institution_spread = 0.1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -5389,7 +5390,7 @@ extend_the_unio_trium_nationum_reform = {
 		nobles_influence_modifier = 0.1
 		nobles_loyalty_modifier = 0.1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -5430,7 +5431,7 @@ bergordnung_reforms_reform = {
 	modifiers = {
 		production_efficiency = 0.1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -5453,7 +5454,7 @@ vozove_hradby_reform = {
 	modifiers = {
 		morale_damage_received = -0.1
 	}
-	
+
 	ai = {
 		factor = 1
 	}

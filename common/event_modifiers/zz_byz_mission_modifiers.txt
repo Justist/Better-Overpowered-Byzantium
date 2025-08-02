@@ -98,15 +98,17 @@ council_of_mediterranean_mod = {
 	global_trade_goods_size = 1
 	trade_steering = 0.5
 	caravan_power = 0.2
-	merchants = 3
 	trade_range_modifier = 0.5
+	trade_company_investment_cost = -0.5
 }
 
 council_of_the_indies_mod = {
-	envoy_travel_time = -0.5
+	envoy_travel_time = -1.0
 	global_colonial_growth = 250
 	colony_cost_modifier = -0.75
 	treasure_fleet_income = 1.0
+	native_uprising_chance = -1.0
+	colony_development_boost = 1
 	colonists = 3
 }
 

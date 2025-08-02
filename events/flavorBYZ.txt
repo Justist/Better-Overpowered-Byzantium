@@ -4171,3 +4171,62 @@ province_event = {
 		change_culture = owner
 	}
 }
+
+country_event = {
+	id = MEE_Byzantine_Events.68
+	title = MEE_Byzantine_Events.68.t
+	desc = MEE_Byzantine_Events.68.d
+	picture = CONSTANTINOPLE_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	hidden = yes
+
+	option = {
+		name = MEE_Byzantine_Events.68.a
+
+		151 = {
+			add_great_project = {
+				type = gme_great_palace_constantinople
+				instant = yes
+				builder = root
+			}
+		}
+	}
+	set_country_flag = BYZ_great_palace_of_constantinople
+}
+
+country_event = {
+	id = MEE_Byzantine_Events.69
+	title = MEE_Byzantine_Events.69.t
+	desc = MEE_Byzantine_Events.69.d
+	picture = CONSTANTINOPLE_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = MEE_Byzantine_Events.69.a
+
+		ai_chance = {
+			factor = 1
+		}
+		151 = {
+			limit = {
+				has_dlc = "Leviathan"
+				has_great_project = {
+					type = gme_great_palace_constantinople
+					tier = 0
+				}
+			}
+			set_great_project_tier_1 = {
+				type = gme_great_palace_constantinople
+			}
+		}
+		destroy_great_project = {
+			type = sultan_ahmed_mosque
+		}
+		custom_tooltip = MEE_Byzantine_Events.69.tt
+	}
+}

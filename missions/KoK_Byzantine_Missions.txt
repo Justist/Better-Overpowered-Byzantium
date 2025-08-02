@@ -637,6 +637,13 @@ MEE_BYZ_conquest_3 = {
 					}
 				"
 			}
+			country_event = {
+				id = MEE_Byzantine_Events.68
+			}
+			country_event = {
+				id = MEE_Byzantine_Events.69
+				days = 3
+			}
 		}
 	}
 

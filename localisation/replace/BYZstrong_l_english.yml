@@ -598,3 +598,13 @@
 
  BYZ_bookmark_byzantium: "§ROv§Oer§Ypo§lwe§Gre§Jd B§Myz§Ban§Pti§Vum§!"
  BYZ_bookmark_byzantium_desc: "Why would you choose anything else?"
+
+ # New Monument - Great Palace of Constantinople
+ gme_great_palace_constantinople: "Great Palace of Constantinople"
+ gme_great_palace_constantinople_desc: "§g§!"
+ MEE_Byzantine_Events.68.t:0 "Restore the Great Palace of Constantinople"
+ MEE_Byzantine_Events.69.t:0 "The Great Palace of Constantinople"
+ MEE_Byzantine_Events.69.d:1 "The Great Palace, once the epicenter of Roman power, had fallen into ruin—its marble cracked, its mosaics faded, its silence deafening. In another world, had the Turks conquered this great city, they surely would have replaced it with domes and minarets, rewriting our legacy in foreign stone. But not in this world. We have seized back destiny itself. The palace shall stand once more—not as a memory, but as a testament to the empire restored."
+ MEE_Byzantine_Events.69.a:0 "Let them dream of the Red Apple — it is ours."
+ MEE_Byzantine_Events.69.tt:0 "The foundations of the Sultan Ahmed Mosque shall never be laid. Restore the Great Palace of Constantinople!"
+

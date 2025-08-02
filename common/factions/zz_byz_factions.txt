@@ -11,11 +11,10 @@ byz_faction_clarissimi = {
 		may_explore = yes
 		colonists = 3
 		range = 1.0
-		envoy_travel_time = -0.5
 		colony_cost_modifier = -0.75
 		global_colonial_growth = 250
-		native_uprising_chance = -2.0
-		colony_development_boost = 4
+		native_uprising_chance = -1.0
+		colony_development_boost = 1
 	}
 }
 
