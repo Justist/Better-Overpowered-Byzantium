@@ -3910,13 +3910,11 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-        AND ={
-			is_subject = yes
-			OR = {
-				is_subject_of_type = pronoia_subject_type
-				is_subject_of_type = hereditary_pronoia_subject_type
-			}
-		}
+        is_subject = yes
+        OR = {
+            is_subject_of_type = pronoia_subject_type
+            is_subject_of_type = hereditary_pronoia_subject_type
+        }
     }
     immediate = {
         if = {
@@ -3966,17 +3964,15 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		AND = {
-			has_country_flag = has_overlords_colour
-			OR = {
-				AND = {
-					is_subject = yes
-					NOT = { is_subject_of_type = pronoia_subject_type }
-					NOT = { is_subject_of_type = hereditary_pronoia_subject_type }
-				}
-				is_subject = no
-			}
-		}
+		has_country_flag = has_overlords_colour
+        OR = {
+            AND = {
+                is_subject = yes
+                NOT = { is_subject_of_type = pronoia_subject_type }
+                NOT = { is_subject_of_type = hereditary_pronoia_subject_type }
+            }
+            is_subject = no
+        }
 	}
 
 	immediate = {
@@ -4003,14 +3999,12 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-        AND ={
-			is_subject = yes
-			OR = {
-				is_subject_of_type = pronoia_subject_type
-				is_subject_of_type = hereditary_pronoia_subject_type
-			}
-			has_country_flag = BYZ_pronoia_religious_drive
-		}
+        is_subject = yes
+        OR = {
+            is_subject_of_type = pronoia_subject_type
+            is_subject_of_type = hereditary_pronoia_subject_type
+        }
+        has_country_flag = BYZ_pronoia_religious_drive
     }
     immediate = {
 		add_country_modifier = {

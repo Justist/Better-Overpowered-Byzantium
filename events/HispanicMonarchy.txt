@@ -173,14 +173,6 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 0
-			modifier = {
-				factor = 0
-				NOT = { num_of_ports = 1 }
-			}
-			modifier = {
-				factor = 0
-				navy_tradition = 75
-			}
 		}
 	}
 }

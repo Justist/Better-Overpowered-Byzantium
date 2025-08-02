@@ -2984,20 +2984,6 @@ KOR_ideas = {
 	kyujanggak = {
 		idea_cost = -0.1
 	}
-
-	#hanguel_alphabet = {
-	#	technology_cost = -0.1
-	#}
-	#grand_code = {
-	#	stability_cost_modifier = -0.10
-	#}
-	#hopae_system = {
-	#	global_manpower_modifier = 0.10
-	#}
-	#kor_economy_reform = {
-	#	global_tax_modifier = 0.10
-	#}
-
 }
 
 
@@ -9581,7 +9567,7 @@ ROM_ideas = {
 		}
 	}
 	free = yes
-	
+
 	pax_romana = {
 		global_unrest = -2
 		years_of_nationalism = -5

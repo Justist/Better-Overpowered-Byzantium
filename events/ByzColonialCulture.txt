@@ -8,15 +8,16 @@ province_event = {
 	hidden = yes
 
 	trigger = {
+        has_owner_culture = no
+        is_core = owner
+        NOT = { nationalism = 1 }
+
 		owner = {
 			OR = {
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
 			}
 		}
-		has_owner_culture = no
-		is_core = owner
-		NOT = { nationalism = 1 }
 
 		OR = {
 			development = 20
@@ -26,6 +27,11 @@ province_event = {
 				owned_by = ROOT
 			}
 		}
+
+        AND = {
+            culture = greek
+            owner = { primary_culture = roman }
+        }
 
 		OR = {
 			culture_group = andean_group
@@ -54,11 +60,6 @@ province_event = {
 			culture_group = je
 			culture_group = aboriginal_australian
 			culture_group = pacific
-
-			AND = {
-				culture = greek
-				owner = { primary_culture = roman }
-			}
 		}
 	}
 

@@ -10,12 +10,12 @@ country_event = {
 
     trigger = {
         any_subject_country = {
+            NOT = {
+                has_country_flag = byz_pronoia_renamed
+            }
             OR = {
                 is_subject_of_type = hereditary_pronoia_subject_type
                 is_subject_of_type = pronoia_subject_type
-            }
-            NOT = {
-                has_country_flag = byz_pronoia_renamed
             }
         }
     }
