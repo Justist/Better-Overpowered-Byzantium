@@ -1,0 +1,178 @@
+###########################################
+# Events for Hispanic Monarchy
+###########################################
+
+namespace = hispanic_monarchy_events
+
+#Royal Council Meeting
+country_event = {
+	id = hispanic_monarchy_events.1
+	title = hispanic_monarchy_events.1.t
+	desc = hispanic_monarchy_events.1.desc
+	picture = DIET_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = hispanic_monarchy_events.1.a
+		trigger = {
+			NOT = { has_country_modifier = council_of_the_chamber_mod }
+		}
+		add_country_modifier = {
+			name = council_of_the_chamber_mod
+			duration = 5475
+		}
+	}
+
+	option = {
+		name = hispanic_monarchy_events.1.b
+		trigger = {
+			NOT = { has_country_modifier = council_of_finance_mod }
+		}
+		add_country_modifier = {
+			name = council_of_finance_mod
+			duration = 5475
+		}
+	}
+
+	option = {
+		name = hispanic_monarchy_events.1.c
+		trigger = {
+			NOT = { has_country_modifier = council_of_the_inquisition_mod }
+		}
+		add_country_modifier = {
+			name = council_of_the_inquisition_mod
+			duration = 5475
+		}
+	}
+}
+
+#State Council Meeting
+country_event = {
+	id = hispanic_monarchy_events.2
+	title = hispanic_monarchy_events.2.t
+	desc = hispanic_monarchy_events.2.desc
+	picture = DIET_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = hispanic_monarchy_events.2.a
+		trigger = {
+			NOT = { has_country_modifier = council_of_europe_mod }
+		}
+		add_country_modifier = {
+			name = council_of_europe_mod
+			duration = 5475
+		}
+	}
+
+	option = {
+		name = hispanic_monarchy_events.2.b
+		trigger = {
+			NOT = { has_country_modifier = council_of_mediterranean_mod }
+		}
+		add_country_modifier = {
+			name = council_of_mediterranean_mod
+			duration = 5475
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = no
+			}
+			modifier = {
+				factor = 0
+				NOT = { galley_fraction = 0.3 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_ports = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = hispanic_monarchy_events.2.c
+		trigger = {
+			NOT = { has_country_modifier = council_of_the_indies_mod }
+		}
+		add_country_modifier = {
+			name = council_of_the_indies_mod
+			duration = 5475
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_year = 1600
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_colonists = 1 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_ports = 1 }
+			}
+		}
+	}
+}
+
+#War Council Meeting
+country_event = {
+	id = hispanic_monarchy_events.3
+	title = hispanic_monarchy_events.3.t
+	desc = hispanic_monarchy_events.3.desc
+	picture = DIET_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = hispanic_monarchy_events.3.a
+		trigger = {
+			NOT = { has_country_modifier = council_of_the_crusade_mod }
+		}
+		add_country_modifier = {
+			name = council_of_the_crusade_mod
+			duration = 5475
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				manpower_percentage = 0.8
+			}
+		}
+	}
+
+	option = {
+		name = hispanic_monarchy_events.3.b
+		trigger = {
+			NOT = { has_country_modifier = council_of_military_orders_mod }
+		}
+		add_country_modifier = {
+			name = council_of_military_orders_mod
+			duration = 5475
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { manpower_percentage = 0.8 }
+			}
+		}
+	}
+
+	option = {
+		name = hispanic_monarchy_events.3.c
+		trigger = {
+			NOT = { has_country_modifier = council_of_the_armada_mod }
+		}
+		add_country_modifier = {
+			name = council_of_the_armada_mod
+			duration = 5475
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

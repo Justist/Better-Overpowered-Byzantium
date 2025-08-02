@@ -48,6 +48,12 @@ estate_cossacks = {
 			has_enabled_estate = { estate = estate_cossacks }
 			AND = {
 				OR = {
+					TAG = BYZ
+					TAG = ROM
+				}
+			}
+			AND = {
+				OR = {
 					has_unlocked_estate = { estate = estate_cossacks }
 					AND = {
 						unit_type = eastern
@@ -124,6 +130,19 @@ estate_cossacks = {
 			has_not_own_estate_disaster_active = { estate = estate_cossacks }
 		}
 		loyalty = -20
+	}
+
+	custom_name = {
+		desc = estate_kataphraktoi
+		trigger = {
+			tag = BYZ
+		}
+	}
+	custom_name = {
+		desc = estate_kataphraktoi
+		trigger = {
+			tag = ROM
+		}
 	}
 
 	privileges = {

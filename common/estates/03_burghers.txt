@@ -1,5 +1,4 @@
-estate_burghers =
-{
+estate_burghers = {
 	icon = 3
 
 	# If true, country will get estate
@@ -207,6 +206,12 @@ estate_burghers =
 		trigger = {
 			tag = BYZ
 			culture_group = byzantine
+		}
+	}
+	custom_name = {
+		desc = estate_emporoi
+		trigger = {
+			tag = ROM
 		}
 	}
 	custom_name = {

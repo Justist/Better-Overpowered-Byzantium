@@ -12,12 +12,15 @@ country_event = {
 	picture = 3_SONS_eventPicture
 
 	trigger = {
+        has_heir = no
+        OR = {
+            has_reform = byz_government_reform
+            has_reform = roman_empire_reform
+        }
 		OR = {
 			is_or_was_tag = { tag = BYZ }
 			is_or_was_tag = { tag = ROM }
 		}
-		has_reform = byz_government_reform
-		has_heir = no
 	}
 
 	# Set description

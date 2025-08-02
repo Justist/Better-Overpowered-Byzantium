@@ -1,5 +1,4 @@
-estate_nobles =
-{
+estate_nobles = {
 	icon = 2
 
 	# If true, country will get estate
@@ -225,6 +224,12 @@ estate_nobles =
 		trigger = {
 			tag = BYZ
 			culture_group = byzantine
+		}
+	}
+	custom_name = {
+		desc = estate_eugeneis
+		trigger = {
+			tag = ROM
 		}
 	}
 	custom_name = {

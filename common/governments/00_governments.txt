@@ -265,6 +265,8 @@ monarchy = {
 				#1.36
 				legacy_of_the_safavid_reform
 				state_madrasas_reform
+				# Byzantium
+				byz_ecumenical_council
 			}
 		}
 		military_doctrines = {

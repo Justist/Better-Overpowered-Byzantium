@@ -1,6 +1,6 @@
 version="3.0"
 picture="BOB.png"
-tags={
+tags= {
 	"Alternative History"
 	"Expansion"
 	"Military"

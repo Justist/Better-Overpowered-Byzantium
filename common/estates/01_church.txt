@@ -1,5 +1,4 @@
-estate_church =
-{
+estate_church = {
 	icon = 1
 
 	# If true, country will get estate
@@ -194,6 +193,12 @@ estate_church =
 		trigger = {
 			tag = BYZ
 			culture_group = byzantine
+		}
+	}
+	custom_name = {
+		desc = estate_klirikoi
+		trigger = {
+			tag = ROM
 		}
 	}
 	custom_name = {

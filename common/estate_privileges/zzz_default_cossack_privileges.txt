@@ -1,0 +1,408 @@
+estate_cossacks_exploration_expedition = {
+	icon = privilege_grant_new_world_charter
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+
+	on_granted = {
+		custom_tooltip = estate_cossacks_exploration_expedition_effect_tooltip
+		if = {
+			limit = { has_dlc = "Domination" }
+			enable_estate_action = {
+				estate_action = COSSACK_CONQUISTADOR_COSSACKS
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = { has_terrain = steppe }
+			add_province_modifier = {
+				name = estate_cossacks_exploration_expedition_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_cossacks_exploration_expedition_mod
+			}
+			remove_province_modifier = estate_cossacks_exploration_expedition_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_cossacks_exploration_expedition_mod_revoke_tooltip
+		if = {
+			limit = { has_dlc = "Domination" }
+			disable_estate_action = {
+				estate_action = COSSACK_CONQUISTADOR_COSSACKS
+			}
+		}
+		else = {
+			hidden_effect = {
+				disable_estate_action = {
+					estate_action = COSSACK_CONQUISTADOR_COSSACKS
+				}
+			}
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_cossacks_exploration_expedition_mod
+			}
+			remove_province_modifier = estate_cossacks_exploration_expedition_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_cossacks_exploration_expedition_mod_revoke_tooltip
+		if = {
+			limit = { has_dlc = "Domination" }
+			disable_estate_action = {
+				estate_action = COSSACK_CONQUISTADOR_COSSACKS
+			}
+		}
+		else = {
+			hidden_effect = {
+				disable_estate_action = {
+					estate_action = COSSACK_CONQUISTADOR_COSSACKS
+				}
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_cossacks_exploration_expedition_mod
+			}
+			remove_province_modifier = estate_cossacks_exploration_expedition_mod
+		}
+	}
+	penalties = {
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.01 }
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = hun_upgrade_cossack_priv }
+		modifier = { max_absolutism = 5 }
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			OR = {
+				tag = MOS
+				tag = RUS
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_cossacks
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_cossacks_exploration_expedition }
+		}
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_cossacks_cossack_self_governance = {
+	icon = privilege_permit_self_governance
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.01 }
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = feo_cossack_self_governance_buff_flag }
+		modifier = { governing_capacity = 50 }
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				region = ruthenia_region
+				owner = {
+					has_country_flag = feo_cossack_self_governance_ruthenia_buff
+				}
+			}
+			add_province_modifier = {
+				name = feo_cossack_self_governance_ruthenia
+				duration = -1
+			}
+		}
+	}
+
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = feo_cossack_self_governance_ruthenia
+			}
+			remove_province_modifier = feo_cossack_self_governance_ruthenia
+		}
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_cossacks_recruit_cossack_generals = {
+	icon = privilege_conscript_cossack_elite
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+		army_tradition = 0.5
+		leader_land_shock = 1
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.01 }
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+#Domination generic Estate Privileges
+estate_cossacks_freedom_of_the_steppes = {
+	icon = privilege_development_efficiency
+	loyalty = 0.05
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		OR = {
+			has_dlc = "Domination"
+			has_dlc = "Winds of Change"
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_cossacks_freedom_of_the_steppes_gt
+		tooltip = {
+			add_province_modifier = {
+				name = estate_cossacks_freedom_of_the_steppes_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_country_flag = feo_buffed_freedom_of_steppes_flag }
+			custom_tooltip = feo_buffed_freedom_of_steppes_gt
+			tooltip = {
+				add_province_modifier = {
+					name = feo_buffed_freedom_of_steppes_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_cossacks_freedom_of_the_steppes_rt
+		if = {
+			limit = { has_country_flag = feo_buffed_freedom_of_steppes_flag }
+			custom_tooltip = feo_buffed_freedom_of_steppes_rt
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				has_terrain = steppe
+			}
+			add_province_modifier = {
+				name = estate_cossacks_freedom_of_the_steppes_mod
+				duration = -1
+			}
+			if = {
+				limit = { owner = { has_country_flag = feo_buffed_freedom_of_steppes_flag } }
+				add_province_modifier = {
+					name = feo_buffed_freedom_of_steppes_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = estate_cossacks_freedom_of_the_steppes_mod }
+			remove_province_modifier = estate_cossacks_freedom_of_the_steppes_mod
+		}
+		if = {
+			limit = { has_province_modifier = feo_buffed_freedom_of_steppes_mod }
+			remove_province_modifier = feo_buffed_freedom_of_steppes_mod
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = estate_cossacks_freedom_of_the_steppes_mod }
+			remove_province_modifier = estate_cossacks_freedom_of_the_steppes_mod
+		}
+		if = {
+			limit = { has_province_modifier = feo_buffed_freedom_of_steppes_mod }
+			remove_province_modifier = feo_buffed_freedom_of_steppes_mod
+		}
+	}
+
+	mechanics = {
+		no_estate_crownland_loss_from_developing
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.01 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_cossacks_exempt_from_bureaucracy = {
+	icon = privilege_empty_throne
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		OR = {
+			has_dlc = "Winds of Change"
+			has_dlc = "Domination"
+		}
+	}
+	on_granted = {
+		enable_estate_action = {
+			estate_action = PERMIT_SELF_GOVERNANCE_COSSACKS
+		}
+		if = {
+			limit = { has_country_flag = feo_cossack_self_governance_buff_flag }
+			custom_tooltip = feo_cossack_self_governance_buff_gt
+			tooltip = {
+				add_province_modifier = {
+					name = feo_cossack_self_governance_buff_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	on_invalid = {
+		disable_estate_action = {
+			estate_action = PERMIT_SELF_GOVERNANCE_COSSACKS
+		}
+		if = {
+			limit = { has_country_flag = feo_cossack_self_governance_buff_flag }
+			custom_tooltip = feo_cossack_self_governance_buff_rt
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = PERMIT_SELF_GOVERNANCE_COSSACKS
+		}
+		if = {
+			limit = { has_country_flag = feo_cossack_self_governance_buff_flag }
+			custom_tooltip = feo_cossack_self_governance_buff_rt
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				has_terrain = steppe
+				owner = { has_country_flag = feo_cossack_self_governance_buff_flag }
+			}
+			add_province_modifier = {
+				name = feo_cossack_self_governance_buff_mod
+				duration = -1
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = feo_cossack_self_governance_buff_mod }
+			remove_province_modifier = feo_cossack_self_governance_buff_mod
+		}
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = feo_cossack_self_governance_buff_mod }
+			remove_province_modifier = feo_cossack_self_governance_buff_mod
+		}
+	}
+	mechanics = {
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.02 }
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = feo_cossack_self_governance_buff_flag }
+		modifier = { governing_capacity = 50 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_cossacks_expand_cossacks_raiders = {
+	icon = privilege_loot
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_dlc = "Domination"
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = {
+			loot_amount = 0.25
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+		custom_tooltip = estate_cossacks_expand_cossacks_raiders_gt
+		enable_estate_action = {
+			estate_action = CONSCRIPT_COSSACK_ELITE_COSSACKS
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_cossacks_expand_cossacks_raiders_rt
+		disable_estate_action = {
+			estate_action = CONSCRIPT_COSSACK_ELITE_COSSACKS
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_cossacks_expand_cossacks_raiders_rt
+		disable_estate_action = {
+			estate_action = CONSCRIPT_COSSACK_ELITE_COSSACKS
+		}
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.01 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -1,0 +1,104 @@
+byzantine_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DESPOT
+		2 = AUTOKRATOR
+		3 = BASILEUS
+	}
+
+	ruler_female = {
+		1 = DESPOTISSA
+		2 = AUTOKRATEIRA 
+		3 = BASILISSA
+	}
+
+	consort_male = {
+		1 = PRINCE_CONSORT
+		2 = PRINCE_CONSORT
+		3 = PRINCE_CONSORT
+	}
+
+	consort_female = {
+		1 = DESPOTISSA
+		2 = AUTOKRATEIRA 
+		3 = BASILISSA
+	}
+
+	heir_male = {
+		1 = PRINCE
+		2 = DESPOT
+		3 = SYMBASILEUS
+	}
+
+	heir_female = {
+		1 = PRINCESS
+		2 = DESPOTISSA
+		3 = SYMBASILISSA
+	}
+
+	trigger = {
+		government = monarchy
+		OR = {
+			tag = BYZ
+			tag = TRE
+			tag = EPI
+			tag = MOE
+			tag = ROM
+		}
+	}
+}
+
+byzantine_pronoiar = {
+	rank = {
+		1 = DESPOTATE
+		2 = DESPOTATE
+		3 = DESPOTATE
+	}
+	
+	ruler_male = {
+		1 = DESPOTIS
+		2 = DESPOTIS
+		3 = DESPOTIS
+	}
+	
+	ruler_female = {
+		1 = DESPOTISSA
+		2 = DESPOTISSA 
+		3 = DESPOTISSA
+	}
+
+	consort_male = {
+		1 = DESPOTIKOS
+		2 = DESPOTIKOS
+		3 = DESPOTIKOS
+	}
+
+	consort_female = {
+		1 = DESPOTISSA
+		2 = DESPOTISSA 
+		3 = DESPOTISSA
+	}
+
+	heir_male = {
+		1 = ARCHONTIS
+		2 = ARCHONTIS
+		3 = ARCHONTIS
+	}
+
+	heir_female = {
+		1 = ARCHONTISSA
+		2 = ARCHONTISSA
+		3 = ARCHONTISSA
+	}
+	trigger = {
+		OR = {
+			is_subject_of_type = pronoia_subject_type
+			is_subject_of_type = hereditary_pronoia_subject_type
+		}
+	}
+}
